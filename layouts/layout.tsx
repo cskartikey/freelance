@@ -9,7 +9,7 @@ export default function Layout({
   return (
     <>
     <Nav />
-      <body>{children}</body>
+      <>{children}</>
     <Footer />
     </>
      
