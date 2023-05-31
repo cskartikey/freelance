@@ -24,7 +24,7 @@ export default function Nav() {
           <span className={`font-Space-Grotesk ${navColor}`}>/&gt;</span>
         </p>
       </div>
-      <div className="space-x-8 pt-4">
+      <div className="space-x-8 pt-4 z-50">
         <Link href="/" className={`font-Space-Grotesk-Bold text-white font-bold text-sm ${router.pathname === "/" ? "opacity-100" : "opacity-33 hover:opacity-66"}`}>
             HOME
         </Link>
