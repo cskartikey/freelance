@@ -1,8 +1,8 @@
 export default function Home() { 
 
     return(
-        <div className="flex">
-            <p>hey</p>
+        <div className="flex justify-center items-center">
+
         </div>
     )
 }
