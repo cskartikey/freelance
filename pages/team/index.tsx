@@ -4,7 +4,7 @@ const Team : NextPage = () => {
     return (
         <>
             <Head>
-                <title>Freelance : Team</title>
+                <title>Team</title>
             </Head>
           
         </>
