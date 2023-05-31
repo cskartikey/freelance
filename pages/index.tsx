@@ -1,9 +1,12 @@
 import Image from "next/image";
 import image from "assets/svg/Image.svg";
-
+import Head from "next/head";
 export default function Index() {
   return (
     <main className="flex text-5xl items-center h-screen justify-center">
+      <Head>
+        <title>Freelance</title>
+      </Head>
       <section>
         <div className="pr-40 mr-96 mb-36">
           <div className="absolute inset-0 flex justify-center items-center z-10">
