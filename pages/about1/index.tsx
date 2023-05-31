@@ -22,7 +22,7 @@ const AboutUS : NextPage = () => {
                     </h3>
                 </div>
             </section>
-            <div className='absolute w-[65vw] h-[85vh] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+            <div className='absolute w-[65vw] h-[85vh] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[1000px] max-h-[600px]'>
                 <div className="w-[520px] h-[300px] border-solid border-[#3282B8] border-[1px] aboslute top-0 mt-6 left-0 z-0"></div>
                 <div className="w-[700px] h-[400px] border-solid border-[#3282B8] border-[1px] absolute bottom-0 right-0 z-0 mb-6"></div>
                 {/* Responsive to be made */}
