@@ -13,6 +13,12 @@ export default function Nav() {
     else if (router.pathname.includes("/about")) {
       setNavColor("text-rectangle-purp");
     }
+    else if (router.pathname.includes("/team")) {
+      setNavColor("text-team-green");
+    }
+    else if (router.pathname.includes("/contact")) {
+      setNavColor("text-contact-red");
+    }
   }, [router.pathname]);
 
   return (

@@ -8,8 +8,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'blue-triange-pattern': "url('../assets/svg/blue-triangle.svg')",
-        'purp-triange-pattern': "url('../assets/svg/purp-rectangle.svg')",
+        'blue-triange-pattern': "url('../assets/svg/blue-triangle.png')",
+        'purp-rectangle-pattern': "url('../assets/svg/purple-rectangle.png')",
+        'green-triange-pattern': "url('../assets/svg/green-triangle.png')",
+        'red-rectangle-pattern': "url('../assets/svg/red-rectangle.png')",
       },
       fontFamily: {
         "Mansalva": ['Mansalva', 'cursive'],
@@ -22,6 +24,8 @@ module.exports = {
         'nav-blue': "#3EA9F2",
         "scroll-blue" : "#BBE1FA",
         "rectangle-purp" :"#9376E0",
+        "team-green" :"#A0D8B3",
+        "contact-red" :"#F99B7D",
       },
       opacity: {
         "33": ".33",

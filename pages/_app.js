@@ -10,7 +10,13 @@ function MyApp({ Component, pageProps }) {
       setBackgroundImage("bg-blue-triange-pattern"); 
     }
     else if(router.pathname.includes("/about")){
-      setBackgroundImage("bg-purp-triange-pattern"); 
+      setBackgroundImage("bg-purp-rectangle-pattern"); 
+    }
+    else if(router.pathname.includes("/team")){
+      setBackgroundImage("bg-green-triange-pattern"); 
+    } 
+    else if(router.pathname.includes("/contact")){
+      setBackgroundImage("bg-red-rectangle-pattern"); 
     }
   }, [router.pathname]);
   useEffect(() => {
