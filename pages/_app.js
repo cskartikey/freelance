@@ -20,8 +20,11 @@ function MyApp({ Component, pageProps }) {
     }
   }, [router.pathname]);
   useEffect(() => {
-    document.body.classList.add(backgroundImage);
-  });
+    const body = document.body;
+    body.classList.forEach((item) => {body.classList.remove(item)});
+    body.classList.add(backgroundImage);
+
+  }, [backgroundImage]);
   return (
     <Layout>
       <Component {...pageProps} />
