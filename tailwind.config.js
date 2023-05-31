@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'blue-triange-pattern': "url('../assets/svg/blue-triangle.png')",
-        'purp-rectangle-pattern': "url('../assets/svg/purple-rectangle.png')",
-        'green-triange-pattern': "url('../assets/svg/green-triangle.png')",
-        'red-rectangle-pattern': "url('../assets/svg/red-rectangle.png')",
+        'blue-triange-pattern': "url('../assets/png/blue-triangle.png')",
+        'purp-rectangle-pattern': "url('../assets/png/purple-rectangle.png')",
+        'green-triange-pattern': "url('../assets/png/green-triangle.png')",
+        'red-rectangle-pattern': "url('../assets/png/red-rectangle.png')",
       },
       fontFamily: {
         "Mansalva": ['Mansalva', 'cursive'],
