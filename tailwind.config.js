@@ -15,7 +15,8 @@ module.exports = {
         "Poppins": ['Poppins', 'sans-serif'],
       },
       colors: {
-        'nav-blue': "#3EA9F2"
+        'nav-blue': "#3EA9F2",
+        "scroll-blue" : "#BBE1FA",
       },
       opacity: {
         "33": ".33",
