@@ -7,6 +7,7 @@ export default function Nav(){
         <div className='space-x-8 pt-4'>
           <span className='font-Space-Grotesk-Bold text-white font-bold text-sm cursor-pointer'>HOME</span>
           <span className='font-Space-Grotesk-Bold text-white font-bold text-sm opacity-33 hover:opacity-66 cursor-pointer' >ABOUT</span>
+          <span className='font-Space-Grotesk-Bold text-white font-bold text-sm opacity-33 hover:opacity-66 cursor-pointer' >TEAM</span>
           <span className='font-Space-Grotesk-Bold text-white font-bold text-sm opacity-33 hover:opacity-66 cursor-pointer'>CONTACT</span>
         </div>
       </nav>
