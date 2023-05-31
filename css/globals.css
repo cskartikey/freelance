@@ -6,9 +6,3 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: url('../assets/svg/background.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
