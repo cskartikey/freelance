@@ -7,7 +7,10 @@ export default function Nav() {
   const [navColor, setNavColor] = useState("text-nav-blue");
 
   useEffect(() => {
-    if (router.pathname === "/about") {
+    if (router.pathname === "/") {
+      setNavColor("text-nav-blue");
+    }
+    else if (router.pathname.includes("/about")) {
       setNavColor("text-rectangle-purp");
     }
   }, [router.pathname]);

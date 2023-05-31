@@ -6,7 +6,10 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const [backgroundImage, setBackgroundImage] = useState("bg-blue-triange-pattern");
   useEffect(() => { 
-    if(router.pathname === "/about"){
+    if(router.pathname === "/"){
+      setBackgroundImage("bg-blue-triange-pattern"); 
+    }
+    else if(router.pathname.includes("/about")){
       setBackgroundImage("bg-purp-triange-pattern"); 
     }
   }, [router.pathname]);
