@@ -6,3 +6,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .team-typewriter-text-wrapper {
+        @apply text-white font-Space-Grotesk md:text-4xl
+    }
+    .team-typewriter-cursor-wrapper {
+        @apply text-white md:text-4xl
+    }
+    .team-typewriter-text-index {
+        @apply text-white font-Poppins !leading-[150%] md:text-4xl
+    }
+}
