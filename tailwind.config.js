@@ -26,6 +26,9 @@ module.exports = {
         "rectangle-purp" :"#9376E0",
         "team-green" :"#A0D8B3",
         "contact-red" :"#F99B7D",
+        "footer-number-red": "#F3BCC8",
+        "footer-number-green": "#A0D8B3",
+        "footer-number-ured": "#F99B7D",
       },
       opacity: {
         "33": ".33",
