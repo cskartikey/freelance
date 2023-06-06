@@ -22,7 +22,7 @@ export default function Nav() {
   }, [router.pathname]);
 
   return (
-    <nav className={`flex justify-between pt-6 px-12 ${navColor}`}>
+    <nav className={`flex justify-between pt-6 px-12 ${navColor} fixed top-0 left-0 z-50 w-full`}>
       <div>
         <p className="font-Mansalva text-white text-3xl cursor-pointer">
           <span className={`font-Space-Grotesk ${navColor}`}>&lt;</span>
