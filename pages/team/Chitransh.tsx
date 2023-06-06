@@ -13,7 +13,7 @@ const TeamMember : NextPage = () => {
             <Head>
                 <title>Team</title>
             </Head>
-            <section>
+            <section className="w-screen">
                 <div className="flex gap-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                     <div className="flex flex-col gap-16 max-w-[400px]">
                         <Typewriter
