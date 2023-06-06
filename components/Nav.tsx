@@ -34,13 +34,13 @@ export default function Nav() {
         <Link href="/" className={`font-Space-Grotesk-Bold text-white font-bold text-sm ${router.pathname === "/" ? "opacity-100" : "opacity-33 hover:opacity-66"}`}>
             HOME
         </Link>
-        <Link href="/about" className={`font-Space-Grotesk-Bold text-white font-bold text-sm ${router.pathname === "/about" ? "opacity-100" : "opacity-33 hover:opacity-66"}`}>
+        <Link href="/about" className={`font-Space-Grotesk-Bold text-white font-bold text-sm ${router.pathname.includes("/about") ? "opacity-100" : "opacity-33 hover:opacity-66"}`}>
             ABOUT
         </Link>
-        <Link href="/team" className={`font-Space-Grotesk-Bold text-white font-bold text-sm ${router.pathname === "/team" ? "opacity-100" : "opacity-33 hover:opacity-66"}`}>
+        <Link href="/team" className={`font-Space-Grotesk-Bold text-white font-bold text-sm ${router.pathname.includes("/team") ? "opacity-100" : "opacity-33 hover:opacity-66"}`}>
             TEAM
         </Link>
-        <Link href="/contact" className={`font-Space-Grotesk-Bold text-white font-bold text-sm ${router.pathname === "/contact" ? "opacity-100" : "opacity-33 hover:opacity-66"}`}>
+        <Link href="/contact" className={`font-Space-Grotesk-Bold text-white font-bold text-sm ${router.pathname.includes("/contact")? "opacity-100" : "opacity-33 hover:opacity-66"}`}>
             CONTACT
         </Link>
       </div>
