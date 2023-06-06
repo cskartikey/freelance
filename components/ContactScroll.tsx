@@ -19,13 +19,13 @@ function ContactScroll() {
       scrollTrigger: {
         start: "top top",
         trigger: sectionRef.current,
-        markers: true,
+        markers: false,
         pin: true,
         pinSpacing: true,
         scrub: 0.8,
         invalidateOnRefresh: true,
         anticipatePin: 1,
-        snap: 0.5 / (scrollArr.length - 1),
+        snap: 1 / (scrollArr.length - 1),
         onEnter: function () {
           const element = document.getElementsByClassName("nav-t");
           for (let i = 0; i < element.length; i++) {
@@ -47,7 +47,7 @@ function ContactScroll() {
   }, []);
 
   return (
-    <section className="overflow-hidden">
+    <section className="overflow-hidden" id="contact-scroll">
       <div ref={triggerRef}>
         <div
           ref={sectionRef}

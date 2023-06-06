@@ -4,6 +4,7 @@ import AboutScroll from "@/components/AboutScroll";
 import TeamScroll from "@/components/TeamScroll";
 import ContactScroll from "@/components/ContactScroll";
 import Nav from "@/components/Nav";
+import Head from "next/head";
 
 export default function Index() {
 
@@ -14,6 +15,9 @@ export default function Index() {
         <AboutScroll />
         <TeamScroll />
         <ContactScroll />
+        <Head>
+          <title>Freelance</title>
+        </Head>
     </>
 
   );

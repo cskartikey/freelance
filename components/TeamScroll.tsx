@@ -21,7 +21,7 @@ function TeamScroll() {
       scrollTrigger: {
         start: "top top",
         trigger: sectionRef.current,
-        markers: true,
+        markers: false,
         pin: true,
         pinSpacing: true,
         scrub: 0.8,
@@ -55,7 +55,7 @@ function TeamScroll() {
   }, []);
 
   return (
-    <section className="overflow-hidden">
+    <section className="overflow-hidden" id="team-scroll">
       <div ref={triggerRef}>
         <div
           ref={sectionRef}
