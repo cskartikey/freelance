@@ -1,9 +1,9 @@
-import { type NextPage } from "next";
-import Head from "next/head";
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import TypewriterComponent from "typewriter-effect";
+import { type NextPage } from 'next'
+import Head from 'next/head'
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import TypewriterComponent from 'typewriter-effect'
 const Contact: NextPage = () => {
   return (
     <>
@@ -33,14 +33,14 @@ const Contact: NextPage = () => {
             </div>
 
             <h1 className="font-Space-Mono">
-              {" "}
+              {' '}
               <TypewriterComponent
                 onInit={(typewriter) => {
-                  typewriter 
+                  typewriter
                     .changeDelay(100)
-                    .typeString("We’d love to hear from you")
+                    .typeString('We’d love to hear from you')
                     .callFunction(() => {})
-                    .start();
+                    .start()
                 }}
               />
             </h1>
@@ -52,7 +52,7 @@ const Contact: NextPage = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact
