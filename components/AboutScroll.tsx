@@ -13,13 +13,12 @@ function AboutScroll() {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    let scrollArr = gsap.utils.toArray('.scroll')
-    console.log(scrollArr)
+    let scrollArr = gsap.utils.toArray(".scroll");
     let to = gsap.to(scrollArr, {
       xPercent: () => -100 * (scrollArr.length - 1),
       ease: Power2.easeInOut,
       scrollTrigger: {
-        start: 'top top',
+        start: "top top",
         trigger: sectionRef.current,
         markers: true,
         pin: true,
@@ -28,12 +27,27 @@ function AboutScroll() {
         invalidateOnRefresh: true,
         anticipatePin: 1,
         snap: 0.5 / (scrollArr.length - 1),
-        toggleClass: {className: 'main-tool-bar--scrolled', targets: '.main-tool-bar'},
-        end: () => '+=' + window.innerWidth,
+        onEnter: function () {
+          const element = document.getElementsByClassName("nav-t");
+          for (let i = 0; i < element.length; i++) {
+            element[i].classList.replace(
+              "text-nav-blue",
+              "text-rectangle-purp"
+            );
+          }
+        },
+        onLeaveBack() {
+          const element = document.getElementsByClassName("nav-t");
+          for (let i = 0; i < element.length; i++) {
+            element[i].classList.replace(
+              "text-rectangle-purp",
+              "text-nav-blue"
+            );
+          }
+        },
+        end: () => "+=" + window.innerWidth,
       },
-      
     });
-    console.log(sectionRef.current)
     return () => {
       to.kill();
     };
@@ -42,14 +56,23 @@ function AboutScroll() {
   return (
     <section className="overflow-hidden">
       <div ref={triggerRef}>
-        <div ref={sectionRef} className="h-screen w-[350vw] flex relative bg-purp-rectangle-pattern">
+        <div
+          ref={sectionRef}
+          className="h-screen w-[350vw] flex relative bg-purp-rectangle-pattern"
+        >
           <div className="scroll h-screen w-screen flex justify-center items-center">
             <AboutUS />
           </div>
-          <div ref={sectionRef}  className="scroll h-screen w-screen flex justify-center items-center ">
+          <div
+            ref={sectionRef}
+            className="scroll h-screen w-screen flex justify-center items-center "
+          >
             <AboutUS_2 />
           </div>
-          <div ref={sectionRef} className="scroll  h-screen w-screen flex justify-center items-center ">
+          <div
+            ref={sectionRef}
+            className="scroll  h-screen w-screen flex justify-center items-center "
+          >
             <AboutUS_3 />
           </div>
         </div>
