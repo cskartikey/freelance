@@ -2,6 +2,7 @@
 import Hero from "@/components/Hero";
 import AboutScroll from "@/components/AboutScroll";
 import TeamScroll from "@/components/TeamScroll";
+import ContactScroll from "@/components/ContactScroll";
 import Nav from "@/components/Nav";
 
 export default function Index() {
@@ -12,6 +13,7 @@ export default function Index() {
         <Hero />
         <AboutScroll />
         <TeamScroll />
+        <ContactScroll />
     </>
 
   );
