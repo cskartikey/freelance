@@ -29,9 +29,9 @@ export default function Hero() {
       </div>
     </section>
     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[65vw] h-[85vh] max-w-[1000px] max-h-[600px]">
-      <div className="absolute rounded-md border-nav-blue border-solid border-2 opacity-50 w-3/6 h-80 top-0 mt-4 left-0 ml-10 z-0"></div>
-      <div className="absolute rounded-md border-nav-blue border-solid border-2 opacity-50 w-5/6 h-5/6 bottom-0 right-0 z-0"></div>
-      <div className="absolute rounded-md border-nav-blue border-solid border-2 opacity-50 w-3/6 h-3/6 -bottom-6 -right-8 z-0"></div>
+      <div className="shape-l absolute rounded-md border-nav-blue border-solid border-2 opacity-50 w-3/6 h-80 top-0 mt-4 left-0 ml-10 z-0"></div>
+      <div className="shape-r absolute rounded-md border-nav-blue border-solid border-2 opacity-50 w-5/6 h-5/6 bottom-0 right-0 z-0"></div>
+      <div className="shape-r-2 absolute rounded-md border-nav-blue border-solid border-2 opacity-50 w-3/6 h-3/6 -bottom-6 -right-8 z-0"></div>
     </div>
   </main>
   );

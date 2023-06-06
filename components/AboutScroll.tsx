@@ -14,6 +14,10 @@ function AboutScroll() {
 
   useEffect(() => {
     let scrollArr = gsap.utils.toArray(".scroll");
+    let tl = gsap.timeline({defaults:{ duration: 1, ease: Power2.easeInOut}})
+    tl.to(".shape-l", {x:-40, y:-20}, 1)
+    .to(".shape-r", {x:40, y:20}, "<")
+    .to(".shape-r-2", {x:40, y:30}, "<")
     let to = gsap.to(scrollArr, {
       xPercent: () => -100 * (scrollArr.length - 1),
       ease: Power2.easeInOut,
