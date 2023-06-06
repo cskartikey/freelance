@@ -22,12 +22,12 @@ export default function Nav() {
   }, [router.pathname]);
 
   return (
-    <nav className={`flex justify-between pt-6 px-12 ${navColor} fixed top-0 left-0 z-50 w-full`}>
+    <nav className={`flex justify-between pt-6 px-12 fixed top-0 left-0 z-50 w-full`}>
       <div>
         <p className="font-Mansalva text-white text-3xl cursor-pointer">
-          <span className={`font-Space-Grotesk ${navColor}`}>&lt;</span>
+          <span className={`nav-t font-Space-Grotesk ${navColor}`}>&lt;</span>
           Freelance
-          <span className={`font-Space-Grotesk ${navColor}`}>/&gt;</span>
+          <span className={`nav-t font-Space-Grotesk ${navColor}`}>/&gt;</span>
         </p>
       </div>
       <div className="space-x-8 pt-4 z-50">
