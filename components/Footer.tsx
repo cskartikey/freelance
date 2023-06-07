@@ -61,11 +61,26 @@ export default function Footer() {
           id="mouse"
         />
       </div>
-      <div className="border-0 border-t-4 h-1 w-1/2 border-dotted mt-2 ml-4 border-scroll-blue"></div>
+      <div className="relative">
+        <div
+          className="border-0 border-t-4 h-1 w-[50vw] border-dotted mt-2 ml-4 border-scroll-blue"
+          id="dotted-line"
+        ></div>
+        <div className="absolute bottom-1 right-96 flex items-center justify-center w-full h-full">
+          <div
+            className="scroll-txt text-black bg-scroll-blue rounded-md font-Space-Grotesk h-6 w-16 text-center z-50"
+            id="scroll-text"
+          >
+            Scroll.
+          </div>
+        </div>
+      </div>
+
       <div>
         <FontAwesomeIcon
           icon={faChevronRight}
           className="text-scroll-blue mb-0.5"
+          id="right-arrow"
         />
       </div>
     </footer>
