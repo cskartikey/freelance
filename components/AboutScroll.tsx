@@ -14,20 +14,7 @@ function AboutScroll() {
 
   useEffect(() => {
     let scrollArr = gsap.utils.toArray('.scroll')
-    let sections = gsap.utils.toArray<HTMLElement>('.scroll-txt');
-    sections.forEach((section: HTMLElement) => {
-      gsap.from(section, {
-        x: 900,
-        scrollTrigger: {
-          trigger: section,
-          start: 'top top',
-          markers: true,
-          scrub: 1,
-          end: () => '+=' + window.innerWidth
-        }
-      });
-    });
-    
+
     gsap.set('.rect-abt-l', {
       x: 60,
       y: 80,
