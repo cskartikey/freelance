@@ -26,10 +26,22 @@ const AboutUS_2: NextPage = () => {
             />
           </div>
           <h1 className="font-Poppins text-white text-3xl text-center md:text-4xl">
-            We Deliver Fast, <span className="craft-anim text-5xl text-transparent">Affordable</span>, and On-Time Solutions
+            We Deliver Fast,{' '}
+            <span className="craft-anim text-5xl text-transparent">
+              Affordable
+            </span>
+            , and On-Time Solutions
           </h1>
           <h3 className="font-Space-Grotesk text-white text-xl text-center md:text-2xl">
-            We value your time and money. With our streamlined project management using Trello and Github, we work swiftly to deliver exceptional results and ensure seamless collaboration. Our pricing is affordable and transparent, with no hidden costs. We provide you with a clear breakdown of expenses, <span className="underline underline-offset-2"> empowering you to make informed decisions. </span>
+            We value your time and money. With our streamlined project
+            management using Trello and Github, we work swiftly to deliver
+            exceptional results and ensure seamless collaboration. Our pricing
+            is affordable and transparent, with no hidden costs. We provide you
+            with a clear breakdown of expenses,{' '}
+            <span className="underline underline-offset-2">
+              {' '}
+              empowering you to make informed decisions.{' '}
+            </span>
           </h3>
         </div>
       </section>

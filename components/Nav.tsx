@@ -50,8 +50,8 @@ export default function Nav() {
       </div>
       <div className="space-x-8 pt-4 z-50">
         <Scroll.Link
-          to={'hero-section'} 
-          smooth={'easeOutQuad'} 
+          to={'hero-section'}
+          smooth={'easeOutQuad'}
           ignoreCancelEvents={true}
           className={`font-Space-Grotesk-Bold text-white font-bold text-sm cursor-pointer ${
             currScrollEle === '/'
@@ -62,8 +62,8 @@ export default function Nav() {
           HOME
         </Scroll.Link>
         <Scroll.Link
-          to={'about-scroll'} 
-          smooth={'easeOutQuad'} 
+          to={'about-scroll'}
+          smooth={'easeOutQuad'}
           ignoreCancelEvents={true}
           className={`font-Space-Grotesk-Bold text-white font-bold text-sm cursor-pointer ${
             currScrollEle.includes('about')
@@ -74,8 +74,8 @@ export default function Nav() {
           ABOUT
         </Scroll.Link>
         <Scroll.Link
-          to={'team-scroll'} 
-          smooth={'easeOutQuad'} 
+          to={'team-scroll'}
+          smooth={'easeOutQuad'}
           ignoreCancelEvents={true}
           className={`font-Space-Grotesk-Bold text-white font-bold text-sm cursor-pointer ${
             currScrollEle.includes('team')
@@ -86,8 +86,8 @@ export default function Nav() {
           TEAM
         </Scroll.Link>
         <Scroll.Link
-          to={'contact-scroll'} 
-          smooth={'easeOutQuad'} 
+          to={'contact-scroll'}
+          smooth={'easeOutQuad'}
           ignoreCancelEvents={true}
           className={`font-Space-Grotesk-Bold text-white font-bold text-sm cursor-pointer ${
             currScrollEle.includes('contact')

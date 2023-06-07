@@ -14,12 +14,27 @@ function AboutScroll() {
 
   useEffect(() => {
     let scrollArr = gsap.utils.toArray('.scroll')
-    gsap.set(".rect-abt-l", { x: 60, y: 80, borderRight: 0, borderTop: 2, borderLeft: 2, borderBottom: 0 })
-    gsap.set(".rect-abt-r", { x: 0, y: 0, borderRight: 0, borderTop: 2, borderLeft: 2, borderBottom: 0})
+    gsap.set('.rect-abt-l', {
+      x: 60,
+      y: 80,
+      borderRight: 0,
+      borderTop: 2,
+      borderLeft: 2,
+      borderBottom: 0,
+    })
+    gsap.set('.rect-abt-r', {
+      x: 0,
+      y: 0,
+      borderRight: 0,
+      borderTop: 2,
+      borderLeft: 2,
+      borderBottom: 0,
+    })
     let tl = gsap.timeline({
-      defaults: { duration: 2, ease: Power2.easeInOut, opacity: 1}})
-    tl.to('.rect-abt-l', { x: -40, y: -20, borderBottom:2, borderRight:2})
-    tl.to('.rect-abt-r', { x: 40, y: 20, borderBottom:2, borderRight:2 }, '<')
+      defaults: { duration: 2, ease: Power2.easeInOut, opacity: 1 },
+    })
+    tl.to('.rect-abt-l', { x: -40, y: -20, borderBottom: 2, borderRight: 2 })
+    tl.to('.rect-abt-r', { x: 40, y: 20, borderBottom: 2, borderRight: 2 }, '<')
     let to = gsap.to(scrollArr, {
       xPercent: () => -100 * (scrollArr.length - 1),
       ease: Power2.easeInOut,
