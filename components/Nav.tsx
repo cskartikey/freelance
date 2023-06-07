@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 import * as Scroll from 'react-scroll'
+import Link from 'next/link'
 
 export default function Nav() {
   const router = useRouter()
@@ -42,11 +43,15 @@ export default function Nav() {
       className={`flex justify-between pt-6 px-12 fixed top-0 left-0 z-50 w-full`}
     >
       <div>
-        <p className="font-Mansalva text-white text-3xl cursor-pointer">
-          <span className={`nav-t font-Space-Grotesk ${navColor}`}>&lt;</span>
-          Freelance
-          <span className={`nav-t font-Space-Grotesk ${navColor}`}>/&gt;</span>
-        </p>
+        <Link href="/">
+          <p className="font-Mansalva text-white text-3xl cursor-pointer">
+            <span className={`nav-t font-Space-Grotesk ${navColor}`}>&lt;</span>
+            Freelance
+            <span className={`nav-t font-Space-Grotesk ${navColor}`}>
+              /&gt;
+            </span>
+          </p>
+        </Link>
       </div>
       <div className="space-x-8 pt-4 z-50">
         <Scroll.Link
