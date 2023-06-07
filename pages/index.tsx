@@ -9,7 +9,6 @@ import { useEffect } from 'react'
 export default function Index() {
   useEffect(() => {
     window.addEventListener('scroll', (e) => {
-      console.log(location.pathname)
       if (scrollY <= window.innerHeight - 5 && location.pathname != '/')
         window.history.pushState('', 'Freelance', '/')
       else if (
