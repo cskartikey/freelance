@@ -21,7 +21,7 @@ export default function Hero() {
       scrollTrigger: {
         start: 'top top',
         trigger: '.hero',
-        markers: true,
+        markers: false,
         onEnter: function () {
           if (tl.progress() < 1) {
             tl.play()

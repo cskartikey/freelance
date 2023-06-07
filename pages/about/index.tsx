@@ -34,8 +34,8 @@ const AboutUS: NextPage = () => {
         </div>
       </section>
       <div className="absolute w-[65vw] h-[85vh] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[1000px] max-h-[600px] opacity-50">
-        <div className="w-[520px] h-[300px] border-solid border-rectangle-purp border-2 rounded-md aboslute top-0 mt-10 left-0 z-0"></div>
-        <div className="w-[700px] h-[400px] border-solid border-rectangle-purp border-2 rounded-md absolute -bottom-12 right-0 z-0 mb-6"></div>
+        <div className="rect-abt-l w-[520px] h-[300px] border-solid border-rectangle-purp border-2 rounded-md aboslute top-0 mt-10 left-0 z-0"></div>
+        <div className="rect-abt-r w-[700px] h-[400px] border-solid border-rectangle-purp border-2 rounded-md absolute -bottom-12 right-0 z-0 mb-6"></div>
         {/* Responsive to be made */}
       </div>
     </>
