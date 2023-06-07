@@ -14,6 +14,20 @@ function AboutScroll() {
 
   useEffect(() => {
     let scrollArr = gsap.utils.toArray('.scroll')
+    let sections = gsap.utils.toArray<HTMLElement>('.scroll-txt');
+    sections.forEach((section: HTMLElement) => {
+      gsap.from(section, {
+        x: 900,
+        scrollTrigger: {
+          trigger: section,
+          start: 'top top',
+          markers: true,
+          scrub: 1,
+          end: () => '+=' + window.innerWidth
+        }
+      });
+    });
+    
     gsap.set('.rect-abt-l', {
       x: 60,
       y: 80,
@@ -54,6 +68,9 @@ function AboutScroll() {
           const element_footer_1 = document.getElementById('footer-number-1')
           const element_footer_2 = document.getElementById('footer-number-2')
           const mouse = document.getElementById('mouse')
+          const rightarrow = document.getElementById('right-arrow')
+          const scrolltext = document.getElementById('scroll-text')
+          const dottedline = document.getElementById('dotted-line')
           document.getElementsByClassName('footer-number')
           for (let i = 0; i < element.length; i++) {
             element[i].classList.replace('text-nav-blue', 'text-rectangle-purp')
@@ -77,6 +94,18 @@ function AboutScroll() {
             'bg-footer-number-red'
           )
           mouse?.classList.replace('text-scroll-blue', 'text-footer-number-red')
+          scrolltext?.classList.replace(
+            'bg-scroll-blue',
+            'bg-footer-number-red'
+          )
+          dottedline?.classList.replace(
+            'border-scroll-blue',
+            'border-footer-number-red'
+          )
+          rightarrow?.classList.replace(
+            'text-scroll-blue',
+            'text-footer-number-red'
+          )
         },
         onLeaveBack() {
           const element = document.getElementsByClassName('nav-t')
@@ -84,6 +113,9 @@ function AboutScroll() {
           const element_footer_1 = document.getElementById('footer-number-1')
           const element_footer_2 = document.getElementById('footer-number-2')
           const mouse = document.getElementById('mouse')
+          const rightarrow = document.getElementById('right-arrow')
+          const scrolltext = document.getElementById('scroll-text')
+          const dottedline = document.getElementById('dotted-line')
           for (let i = 0; i < element.length; i++) {
             element[i].classList.replace('text-rectangle-purp', 'text-nav-blue')
           }
@@ -106,6 +138,18 @@ function AboutScroll() {
             'text-transparent'
           )
           mouse?.classList.replace('text-footer-number-red', 'text-scroll-blue')
+          scrolltext?.classList.replace(
+            'bg-footer-number-red',
+            'bg-scroll-blue'
+          )
+          dottedline?.classList.replace(
+            'border-footer-number-red',
+            'border-scroll-blue'
+          )
+          rightarrow?.classList.replace(
+            'text-footer-number-red',
+            'text-scroll-blue'
+          )
         },
         end: () => '+=' + window.innerWidth,
       },
