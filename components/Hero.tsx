@@ -39,7 +39,7 @@ export default function Hero() {
         <title>Freelance</title>
       </Head>
       <section>
-        <div className="pr-40 mr-96 mb-36">
+        <div className="pr-40 mr-96 mb-12">
           <div className="absolute inset-0 flex justify-center items-center z-10">
             <Image src={image} alt="" />
           </div>
