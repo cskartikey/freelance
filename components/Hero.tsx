@@ -34,7 +34,7 @@ export default function Hero() {
     })
   })
   return (
-    <main className="hero flex text-5xl items-center h-screen justify-center">
+    <main className="hero flex text-5xl items-center h-screen justify-center" id='hero-section'>
       <Head>
         <title>Freelance</title>
       </Head>

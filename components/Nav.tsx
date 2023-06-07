@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
+import * as Scroll from 'react-scroll'
 
 export default function Nav() {
   const router = useRouter()
@@ -9,9 +9,9 @@ export default function Nav() {
 
   useEffect(() => {
     window.addEventListener('scroll', (e) => {
-      if (scrollY <= window.innerHeight) setCurrScrollEle('/')
+      if (scrollY <= window.innerHeight - 5) setCurrScrollEle('/')
       else if (
-        scrollY > window.innerHeight &&
+        scrollY > window.innerHeight - 5 &&
         scrollY <= window.innerHeight * 3
       )
         setCurrScrollEle('about')
@@ -49,46 +49,54 @@ export default function Nav() {
         </p>
       </div>
       <div className="space-x-8 pt-4 z-50">
-        <Link
-          href="/"
-          className={`font-Space-Grotesk-Bold text-white font-bold text-sm ${
+        <Scroll.Link
+          to={'hero-section'} 
+          smooth={'easeOutQuad'} 
+          ignoreCancelEvents={true}
+          className={`font-Space-Grotesk-Bold text-white font-bold text-sm cursor-pointer ${
             currScrollEle === '/'
               ? 'opacity-100'
               : 'opacity-33 hover:opacity-66'
           }`}
         >
           HOME
-        </Link>
-        <Link
-          href="#about-scroll"
-          className={`font-Space-Grotesk-Bold text-white font-bold text-sm ${
+        </Scroll.Link>
+        <Scroll.Link
+          to={'about-scroll'} 
+          smooth={'easeOutQuad'} 
+          ignoreCancelEvents={true}
+          className={`font-Space-Grotesk-Bold text-white font-bold text-sm cursor-pointer ${
             currScrollEle.includes('about')
               ? 'opacity-100'
               : 'opacity-33 hover:opacity-66'
           }`}
         >
           ABOUT
-        </Link>
-        <Link
-          href="#team-scroll"
-          className={`font-Space-Grotesk-Bold text-white font-bold text-sm ${
+        </Scroll.Link>
+        <Scroll.Link
+          to={'team-scroll'} 
+          smooth={'easeOutQuad'} 
+          ignoreCancelEvents={true}
+          className={`font-Space-Grotesk-Bold text-white font-bold text-sm cursor-pointer ${
             currScrollEle.includes('team')
               ? 'opacity-100'
               : 'opacity-33 hover:opacity-66'
           }`}
         >
           TEAM
-        </Link>
-        <Link
-          href="#contact-scroll"
-          className={`font-Space-Grotesk-Bold text-white font-bold text-sm ${
+        </Scroll.Link>
+        <Scroll.Link
+          to={'contact-scroll'} 
+          smooth={'easeOutQuad'} 
+          ignoreCancelEvents={true}
+          className={`font-Space-Grotesk-Bold text-white font-bold text-sm cursor-pointer ${
             currScrollEle.includes('contact')
               ? 'opacity-100'
               : 'opacity-33 hover:opacity-66'
           }`}
         >
           CONTACT
-        </Link>
+        </Scroll.Link>
       </div>
     </nav>
   )

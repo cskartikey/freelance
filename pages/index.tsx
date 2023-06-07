@@ -11,9 +11,9 @@ export default function Index() {
   useEffect(() => {
     window.addEventListener('scroll', (e) => {
       console.log(location.pathname)
-      if (scrollY <= window.innerHeight && location.pathname != '/')
+      if (scrollY <= window.innerHeight - 5 && location.pathname != '/')
         window.history.pushState('', 'Freelance', '/')
-      else if (scrollY > window.innerHeight && scrollY <= window.innerHeight * 3 && location.pathname.includes('/about') == false)
+      else if (scrollY > window.innerHeight - 5 && scrollY <= window.innerHeight * 3 && location.pathname.includes('/about') == false)
         window.history.pushState('', 'Freelance', '/about')
       else if (scrollY > window.innerHeight * 3 && scrollY <= window.innerHeight * 7 && location.pathname.includes('/team') == false)
         window.history.pushState('', 'Freelance', '/team')
