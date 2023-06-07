@@ -27,15 +27,16 @@ export default function Nav() {
       )
         setCurrScrollEle('contact')
     })
-    if (router.pathname === '/') {
-      setNavColor('text-nav-blue')
-    } else if (router.pathname.includes('/about')) {
-      setNavColor('text-rectangle-purp')
-    } else if (router.pathname.includes('/team')) {
-      setNavColor('text-team-green')
-    } else if (router.pathname.includes('/contact')) {
-      setNavColor('text-contact-red')
-    }
+    // REDUNDANT
+    // if (router.pathname === '/') {
+    //   setNavColor('text-nav-blue')
+    // } else if (router.pathname.includes('/about')) {
+    //   setNavColor('text-rectangle-purp')
+    // } else if (router.pathname.includes('/team')) {
+    //   setNavColor('text-team-green')
+    // } else if (router.pathname.includes('/contact')) {
+    //   setNavColor('text-contact-red')
+    // }
   }, [router.pathname])
 
   return (

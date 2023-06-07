@@ -1,39 +1,72 @@
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
+import { idText } from 'typescript'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faChevronLeft,
+  faChevronRight,
+  faComputerMouse,
+} from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
   const router = useRouter()
-  const [footer, setFotColor] = useState('border-nav-blue')
-  const [footerNumber, setnFotColor] = useState('bg-scroll-blue')
-  useEffect(() => {
-    if (router.pathname === '/') {
-      setFotColor('border-nav-blue')
-      setnFotColor('bg-scroll-blue')
-    } else if (router.pathname.includes('/about')) {
-      setFotColor('border-rectangle-purp')
-      setnFotColor('bg-footer-number-red')
-    } else if (router.pathname.includes('/team')) {
-      setFotColor('border-team-green')
-      setnFotColor('bg-footer-number-green')
-    } else if (router.pathname.includes('/contact')) {
-      setFotColor('border-contact-red')
-      setnFotColor('bg-footer-number-ured')
-    }
-  }, [router.pathname])
+  // const [footer, setFotColor] = useState('border-nav-blue')
+  // const [footerNumber, setnFotColor] = useState('bg-scroll-blue')
   return (
-    <footer className="fixed bottom-16 w-full flex justify-start pl-8">
-      <div>
-        <p className="text-white opacity-[.35] font-Space-Mono">
-          freelance.kodec.tech
-        </p>
+    <footer className="fixed bottom-16 w-full flex justify-start pl-8 z-50">
+      <div className="pt-2">
+        <Link
+          href="https://freelance.kodec.tech/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <p className="text-white opacity-[.35] font-Space-Mono">
+            freelance.kodec.tech
+          </p>
+        </Link>
       </div>
       <div
-        className={`flex space-x-4 border-2 border-solid ${footer} opacity-50 ml-36 font-Space-Mono`}
+        className={`footer grid grid-cols-4 divide-x-2 divide-opacity-50 divide-nav-blue border-solid border-2 border-nav-blue ml-36 border-opacity-50 font-Space-Mono`}
       >
-        <div className={`${footerNumber} text-black opacity-90`}>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
+        <div
+          className={`bg-scroll-blue text-black opacity-90 px-2 text-lg`}
+          id="footer-number-1"
+        >
+          1
+        </div>
+        <div
+          className={`footer-number-2 text-black opacity-90 px-2 text-lg text-transparent`}
+          id="footer-number-2"
+        >
+          2
+        </div>
+        <div
+          className={`footer-number-3 text-black opacity-90 px-2 text-lg text-transparent `}
+          id="footer-number-3"
+        >
+          3
+        </div>
+        <div
+          className={`footer-number-4 text-black opacity-90 px-2 text-lg text-transparent`}
+          id="footer-number-4"
+        >
+          4
+        </div>
+      </div>
+      <div>
+        <FontAwesomeIcon
+          icon={faComputerMouse}
+          className="text-scroll-blue text-3xl ml-12"
+          id="mouse"
+        />
+      </div>
+      <div className="border-0 border-t-4 h-1 w-1/2 border-dotted mt-2 ml-4 border-scroll-blue"></div>
+      <div>
+        <FontAwesomeIcon
+          icon={faChevronRight}
+          className="text-scroll-blue mb-0.5"
+        />
       </div>
     </footer>
   )
