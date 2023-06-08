@@ -37,21 +37,12 @@ const Contact: NextPage = () => {
           </div>
           <div className="flex flex-col space-y-8 b-36 text-white font-Poppins text-center text-5xl">
             <div className="space-y-4">
-              <h1>Do you want to start a project,</h1>
+              <h1>Do you want to start a <span className="stroke-contact text-transparent text-5xl">project</span> ,</h1>
               <h1 className="">or just say hi?</h1>
             </div>
 
-            <h1 className="font-Space-Mono">
+            <h1 className="font-Space-Mono" id="contact-typing-text">
               {' '}
-              <TypewriterComponent
-                onInit={(typewriter) => {
-                  typewriter
-                    .changeDelay(100)
-                    .typeString('We’d love to hear from you')
-                    .callFunction(() => {})
-                    .start()
-                }}
-              />
             </h1>
           </div>
         </div>

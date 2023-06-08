@@ -19,17 +19,7 @@ const TeamMember: NextPage = () => {
     <>
       <section className="w-screen h-screen">
         <section className="max-w-[610px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center min-h-[200px]">
-          <Typewriter
-            options={{
-              strings:
-                'Some badass tagline which basically means Meet Our Team (again Typing animation.)',
-              autoStart: typingStatus,
-              loop: false,
-              wrapperClassName: 'team-typewriter-text-index',
-              cursorClassName:
-                'team-typewriter-cursor-wrapper Typewriter__cursor',
-            }}
-          />
+          <div className="text-5xl font-Poppins text-white team-typing-text"></div>
         </section>
       </section>
     </>

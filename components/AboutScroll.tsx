@@ -39,7 +39,7 @@ function AboutScroll() {
 
     let to = gsap.to(scrollArr, {
       xPercent: () => -100 * (scrollArr.length - 1),
-      ease: "none",
+      ease: 'none',
       scrollTrigger: {
         start: 'top top',
         trigger: triggerRef.current,

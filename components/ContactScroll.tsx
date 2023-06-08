@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
-import { Power2 } from 'gsap'
+import { TextPlugin } from 'gsap/dist/TextPlugin'
 import ContactUS from '@/pages/contact'
 import Contact from '@/pages/contact/2'
 
@@ -9,13 +9,13 @@ function ContactScroll() {
   const sectionRef = useRef(null)
   const triggerRef = useRef(null)
 
-  gsap.registerPlugin(ScrollTrigger)
+  gsap.registerPlugin(ScrollTrigger, TextPlugin)
 
   useEffect(() => {
     let scrollArr = gsap.utils.toArray('.scroll-contact')
     let to = gsap.to(scrollArr, {
       xPercent: () => -100 * (scrollArr.length - 1),
-      ease: "none",
+      ease: 'none',
       scrollTrigger: {
         start: 'top top',
         trigger: triggerRef.current,
@@ -65,6 +65,12 @@ function ContactScroll() {
               scrub: 1,
               end: () => '+=' + window.innerWidth,
             },
+          })
+          gsap.to('#contact-typing-text', {
+            text: { value: 'We’d <span class="stroke-contact text-transparent">love</span> to hear from you!' },
+            duration: 3,
+            delay: 0.5,
+            ease: 'none',
           })
         },
         onLeaveBack() {

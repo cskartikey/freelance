@@ -18,7 +18,7 @@ function TeamScroll() {
     console.log(scrollArr.length)
     let to = gsap.to(scrollArr, {
       xPercent: () => -100 * (scrollArr.length - 1),
-      ease: "none",
+      ease: 'none',
       duration: 1,
       scrollTrigger: {
         start: 'top top',
@@ -72,6 +72,12 @@ function TeamScroll() {
               scrub: 1,
               end: () => '+=' + window.innerWidth,
             },
+          })
+          gsap.to('.team-typing-text', {
+            text: { value: 'Unleashing the Power of Collaboration: Meet Our Team' },
+            duration: 4,
+            delay: 0.5,
+            ease: 'none',
           })
         },
         onLeaveBack() {
@@ -129,7 +135,7 @@ function TeamScroll() {
           </div>
           <div
             ref={sectionRef}
-            className="scroll-team h-screen w-screen flex justify-center items-center "
+            className="scroll-team h-screen w-screen flex justify-center items-center ta-2"
           >
             <Kartikey />
           </div>

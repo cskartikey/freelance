@@ -3,7 +3,6 @@ import Head from 'next/head'
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import TypewriterComponent from 'typewriter-effect'
 import Link from 'next/link'
 const Contact: NextPage = () => {
   return (
@@ -16,14 +15,16 @@ const Contact: NextPage = () => {
           <div className="flex flex-col space-y-12 pb-24 text-white font-Poppins text-4xl">
             <div className="space-y-4 p-7 border-2 border-footer-number-ured border-opacity-33 hover:border-opacity-100 z-50">
               <h1 className="font-Space-Grotesk opacity-50 hover:opacity-100">
+                <Link href='mailto:freelance@kodec.tech'>
                 <FontAwesomeIcon
-                  icon={faEnvelope}
-                  className="text-footer-number-ured pr-4"
-                />{' '}
-                freelance@kodec.tech{' '}
-                <span className="font-Poppins pl-24 font-bold text-3xl">
-                  MAIL US
-                </span>
+                    icon={faEnvelope}
+                    className="text-footer-number-ured pr-4"
+                  />{' '}
+                  freelance@kodec.tech{' '}
+                  <span className="font-Poppins pl-24 font-bold text-3xl">
+                    MAIL US
+                  </span>
+                </Link>
               </h1>
             </div>
             <div className="space-y-4 p-7 border-2 border-footer-number-ured border-opacity-33 hover:border-opacity-100 z-50">
@@ -39,19 +40,20 @@ const Contact: NextPage = () => {
               </h1>
             </div>
             <div className="space-y-4 p-7 border-2 border-footer-number-ured border-opacity-33 hover:border-opacity-100 z-50">
-              <a
-                href="https://instagram.com/"
-                className="font-Space-Grotesk opacity-50 hover:opacity-100"
-              >
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  className="text-footer-number-ured pr-4"
-                />{' '}
-                @kodecrumbs{' '}
-                <span className="font-Poppins pl-64 font-bold text-3xl">
-                  DM US
-                </span>
-              </a>
+              <Link href="https://www.instagram.com/kode.crumbs/">
+                <div
+                  className="font-Space-Grotesk opacity-50 hover:opacity-100"
+                >
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    className="text-footer-number-ured pr-4"
+                  />{' '}
+                  @kode.crumbs{' '}
+                  <span className="font-Poppins pl-64 font-bold text-3xl">
+                    DM US
+                  </span>
+                </div>
+                </Link>
             </div>
           </div>
         </div>

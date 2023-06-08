@@ -1,13 +1,13 @@
 import { type NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import Typewriter from 'typewriter-effect'
+import Link from 'next/link'
 import dummyAvatar from '../../assets/png/avatar.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelopesBulk } from '@fortawesome/free-solid-svg-icons'
 
-const TeamMember: NextPage = () => {
+const Utkarsh: NextPage = () => {
   return (
     <>
       <Head>
@@ -15,24 +15,17 @@ const TeamMember: NextPage = () => {
       </Head>
       <section className="w-screen">
         <div className="flex gap-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <div className="flex flex-col gap-16 max-w-[400px]">
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter.typeString('Hey there!').start()
-              }}
-              options={{
-                wrapperClassName: 'team-typewriter-text-wrapper',
-                cursorClassName:
-                  'team-typewriter-cursor-wrapper Typewriter__cursor',
-              }}
-            />
-            <p className="text-white text-base font-Poppins">
-              I am K. Utkarsh. I have around 4 years of experience in Graphics
-              Designing. Being fascinated by web development, the creative side
-              of mine paid off to make me a skilled Designer. I am proficient in
-              GIMP, Figma, Krita, Inkscape, Photoshop and AfterEffects. I’m the
-              one responsible for making your website’s designs truly
-              magnificent.
+          <div className="flex flex-col gap-16 max-w-[550px]">
+            <div className="font-Space-Grotesk text-4xl text-white">
+              Hi There!
+            </div>
+            <p className="text-white text-lg font-Poppins">
+              I am <span className="stroke-team text-transparent text-5xl">Kunwar</span> Utkarsh. I have around 4 years of experience in
+              Graphics Designing. Being fascinated by web development, the
+              creative side of mine paid off to make me a skilled Designer. I am
+              proficient in GIMP, Figma, Krita, Inkscape, Photoshop and
+              AfterEffects. I’m the one responsible for making your website’s
+              designs truly magnificent.
             </p>
           </div>
           <div className="flex flex-col max-w-[400px] w-full items-center gap-2">
@@ -48,21 +41,39 @@ const TeamMember: NextPage = () => {
         </div>
       </section>
       <div className="absolute flex flex-col gap-4 left-[5%] bottom-[22vh]">
-        <FontAwesomeIcon
-          icon={faInstagram}
-          className="text-[#A0D8B3] text-3xl opacity-[0.5] cursor-pointer"
-        />
-        <FontAwesomeIcon
-          icon={faGithub}
-          className="text-[#A0D8B3] text-3xl opacity-[0.5] cursor-pointer"
-        />
-        <FontAwesomeIcon
-          icon={faEnvelopesBulk}
-          className="text-[#A0D8B3] text-3xl opacity-[0.5] cursor-pointer"
-        />
+        <Link
+          href="https://linkedin.com/in/k-utkarsh-21072b273"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            className="text-[#A0D8B3] text-3xl opacity-[0.5] cursor-pointer"
+          />
+        </Link>
+        <Link
+          href="https://github.com/mk-utkarsh"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <FontAwesomeIcon
+            icon={faGithub}
+            className="text-[#A0D8B3] text-3xl opacity-[0.5] cursor-pointer"
+          />
+        </Link>
+        <Link
+          href="mailto:kunwar15utkarsh@gmail.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <FontAwesomeIcon
+            icon={faEnvelopesBulk}
+            className="text-[#A0D8B3] text-3xl opacity-[0.5] cursor-pointer"
+          />
+        </Link>
       </div>
     </>
   )
 }
 
-export default TeamMember
+export default Utkarsh
