@@ -1,10 +1,14 @@
 import { type NextPage } from 'next'
 import Head from 'next/head'
 import {
+  faEye,
+  faHandshake,
   faLaptopCode,
+  faLightbulb,
   faMobileAndroid,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHand } from '@fortawesome/free-regular-svg-icons'
 const AboutUS_3: NextPage = () => {
   return (
     <>
@@ -12,19 +16,23 @@ const AboutUS_3: NextPage = () => {
         <div className="flex flex-col gap-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:max-w-[700px] z-50">
           <div className="flex flex-row gap-3 justify-center space-x-2">
             <FontAwesomeIcon
-              icon={faLaptopCode}
+              icon={faHandshake}
               className="text-rectangle-purp text-5xl"
             />
             <FontAwesomeIcon
-              icon={faMobileAndroid}
+              icon={faEye}
+              className="text-rectangle-purp text-5xl"
+            />
+            <FontAwesomeIcon
+              icon={faLightbulb}
               className="text-rectangle-purp text-5xl"
             />
           </div>
           <h1 className="font-Poppins text-white text-3xl text-center md:text-4xl">
-            We build your website so that it's responsive.
+          <span className="craft-anim text-5xl text-transparent">Collaborative </span> Approach: Your Vision, Our Expertise
           </h1>
           <h3 className="font-Space-Grotesk text-white text-xl text-center md:text-2xl">
-            Little bit about the responsiveness etc and and wtf is responsive...
+            We emphasize our collaborative approach to website development. We understand the significance of <span className='underline underline-offset-2'>aligning our expertise with your vision</span>. By working closely with you, we ensure that your unique requirements and goals are met throughout the development process. Together, we'll bring your ideas to life and create a website that exceeds your expectations.
           </h3>
         </div>
       </section>
