@@ -74,9 +74,9 @@ function TeamScroll() {
             },
           })
           gsap.to('.team-typing-text', {
-            text: { value: 'Unleashing the Power of Collaboration: Meet Our Team' },
-            duration: 4,
-            delay: 0.5,
+            text: { value: 'Unleashing the Power of Collaboration: Meet Our Team!' },
+            duration: 3,
+            delay: 0.2,
             ease: 'none',
           })
         },

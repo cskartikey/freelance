@@ -68,8 +68,8 @@ function ContactScroll() {
           })
           gsap.to('#contact-typing-text', {
             text: { value: 'We’d <span class="stroke-contact text-transparent">love</span> to hear from you!' },
-            duration: 3,
-            delay: 0.5,
+            duration: 2,
+            delay: 0.2,
             ease: 'none',
           })
         },
