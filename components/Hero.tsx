@@ -39,7 +39,7 @@ export default function Hero() {
       id="hero-section"
     >
       <Head>
-        <title>Freelance</title>
+        <title>Kode Crumbs: Freelance</title>
       </Head>
       <section>
         <div className="pr-40 mr-96 mb-12 ">
