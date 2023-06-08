@@ -20,7 +20,7 @@ const Utkarsh: NextPage = () => {
               Hi There!
             </div>
             <p className="text-white text-lg font-Poppins">
-              I am <span className="stroke-team text-transparent text-5xl">Kunwar</span> Utkarsh. I have around 4 years of experience in
+              I am Kunwar <span className="stroke-team text-transparent text-5xl">Utkarsh</span>. I have around 4 years of experience in
               Graphics Designing. Being fascinated by web development, the
               creative side of mine paid off to make me a skilled Designer. I am
               proficient in GIMP, Figma, Krita, Inkscape, Photoshop and
@@ -48,7 +48,7 @@ const Utkarsh: NextPage = () => {
         >
           <FontAwesomeIcon
             icon={faLinkedin}
-            className="text-[#A0D8B3] text-3xl opacity-[0.5] cursor-pointer"
+            className="text-footer-number-green text-3xl opacity-50 cursor-pointer hover:opacity-100 hover:text-4xl"
           />
         </Link>
         <Link
@@ -58,7 +58,7 @@ const Utkarsh: NextPage = () => {
         >
           <FontAwesomeIcon
             icon={faGithub}
-            className="text-[#A0D8B3] text-3xl opacity-[0.5] cursor-pointer"
+            className="text-footer-number-green text-3xl opacity-50 cursor-pointer hover:opacity-100 hover:text-4xl"
           />
         </Link>
         <Link
@@ -68,7 +68,7 @@ const Utkarsh: NextPage = () => {
         >
           <FontAwesomeIcon
             icon={faEnvelopesBulk}
-            className="text-[#A0D8B3] text-3xl opacity-[0.5] cursor-pointer"
+            className="text-footer-number-green text-3xl opacity-50 cursor-pointer hover:opacity-100 hover:text-4xl"
           />
         </Link>
       </div>

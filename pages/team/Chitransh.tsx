@@ -52,7 +52,7 @@ const Chitransh: NextPage = () => {
         >
           <FontAwesomeIcon
             icon={faLinkedin}
-            className="text-[#A0D8B3] text-3xl opacity-[0.5] cursor-pointer"
+            className="text-footer-number-green text-3xl opacity-50 cursor-pointer hover:opacity-100 hover:text-4xl"
           />
         </Link>
         <Link
@@ -62,7 +62,7 @@ const Chitransh: NextPage = () => {
         >
           <FontAwesomeIcon
             icon={faGithub}
-            className="text-[#A0D8B3] text-3xl opacity-[0.5] cursor-pointer"
+            className="text-footer-number-green text-3xl opacity-50 cursor-pointer hover:opacity-100 hover:text-4xl"
           />
         </Link>
         <Link
@@ -72,7 +72,7 @@ const Chitransh: NextPage = () => {
         >
           <FontAwesomeIcon
             icon={faEnvelopesBulk}
-            className="text-[#A0D8B3] text-3xl opacity-[0.5] cursor-pointer"
+            className="text-footer-number-green text-3xl opacity-50 cursor-pointer hover:opacity-100 hover:text-4xl"
           />
         </Link>
       </div>

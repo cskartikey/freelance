@@ -34,7 +34,7 @@ const Kartikey: NextPage = () => {
           <div className="flex flex-col max-w-[400px] w-full items-center gap-2">
             <Image
               src={kartikeyAvatar}
-              alt={'people'}
+              alt={'portrait of Kartikey, our Web-Developer'}
               className="w-full h-auto max-w-[250px] rounded-md pointer-events-none"
             />
             <h3 className="text-white opacity-[0.5] text-2xl font-Space-Grotesk font-bold">
@@ -51,7 +51,7 @@ const Kartikey: NextPage = () => {
         >
           <FontAwesomeIcon
             icon={faLinkedin}
-            className="text-[#A0D8B3] text-3xl opacity-[0.5] cursor-pointer"
+            className="text-footer-number-green text-3xl opacity-50 cursor-pointer hover:opacity-100 hover:text-4xl"
           />
         </Link>
         <Link
@@ -61,7 +61,7 @@ const Kartikey: NextPage = () => {
         >
           <FontAwesomeIcon
             icon={faGithub}
-            className="text-[#A0D8B3] text-3xl opacity-[0.5] cursor-pointer"
+            className="text-footer-number-green text-3xl opacity-50 cursor-pointer hover:opacity-100 hover:text-4xl"
           />
         </Link>
         <Link
@@ -71,7 +71,7 @@ const Kartikey: NextPage = () => {
         >
           <FontAwesomeIcon
             icon={faEnvelopesBulk}
-            className="text-[#A0D8B3] text-3xl opacity-[0.5] cursor-pointer"
+            className="text-footer-number-green text-3xl opacity-50 cursor-pointer hover:opacity-100 hover:text-4xl"
           />
         </Link>
       </div>
