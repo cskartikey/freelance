@@ -3,10 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import kartikeyAvatar from '../../assets/png/kartikey.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faGithub,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelopesBulk } from '@fortawesome/free-solid-svg-icons'
 
 const Kartikey: NextPage = () => {
