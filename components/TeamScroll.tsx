@@ -36,6 +36,25 @@ function TeamScroll() {
               'text-team-green'
             )
           }
+          gsap.set('.footer', {
+            borderColor: '#A0D8B3',
+          })
+          gsap.set('.mouse', {
+            color: '#A0D8B3',
+          })
+          gsap.set('.dotted-line', {
+            borderColor: '#A0D8B3',
+          })
+          gsap.set('.right-arrow', {
+            color: '#A0D8B3',
+          })
+          gsap.to('.footer-text', {
+            x: 59,
+            duration: 1,
+            backgroundColor: '#A0D8B3',
+            text: { value: '3' },
+          })
+          document.getElementById('divider')?.classList.replace('divide-rectangle-purp', 'divide-footer-number-green')
         },
         onLeaveBack() {
           const element = document.getElementsByClassName('nav-t')
@@ -45,6 +64,25 @@ function TeamScroll() {
               'text-rectangle-purp'
             )
           }
+          gsap.set('.footer', {
+            borderColor: '#9376E0',
+          })
+          gsap.set('.mouse', {
+            color: '#9376E0',
+          })
+          gsap.set('.dotted-line', {
+            borderColor: '#9376E0',
+          })
+          gsap.set('.right-arrow', {
+            color: '#9376E0',
+          })
+          gsap.to('.footer-text', {
+            x: 30,
+            duration: 1,
+            backgroundColor: '#F3BCC8',
+            text: { value: '2' },
+          })
+          document.getElementById('divider')?.classList.replace('divide-footer-number-green', 'divide-rectangle-purp')
         },
         end: () => '+=' + window.innerWidth,
       },

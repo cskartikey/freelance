@@ -75,6 +75,7 @@ function AboutScroll() {
             backgroundColor: '#F3BCC8',
             text: { value: '2' },
           })
+          document.getElementById('divider')?.classList.replace('divide-nav-blue', 'divide-rectangle-purp')
         },
         onLeaveBack() {
           const navBarText = document.getElementsByClassName('nav-t')
@@ -84,12 +85,25 @@ function AboutScroll() {
               'text-nav-blue'
             )
           }
+          gsap.set('.footer', {
+            borderColor: '#3EA9F2',
+          })
+          gsap.set('.mouse', {
+            color: '#3EA9F2',
+          })
+          gsap.set('.dotted-line', {
+            borderColor: '#3EA9F2',
+          })
+          gsap.set('.right-arrow', {
+            color: '#3EA9F2',
+          })
           gsap.to('.footer-text', {
             x: 0,
             duration: 1,
             backgroundColor: '#BBE1FA',
             text: { value: '1' },
           })
+          document.getElementById('divider')?.classList.replace('divide-rectangle-purp', 'divide-nav-blue')
         },
         end: () => '+=' + window.innerWidth,
       },

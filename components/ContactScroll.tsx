@@ -31,12 +31,50 @@ function ContactScroll() {
           for (let i = 0; i < element.length; i++) {
             element[i].classList.replace('text-team-green', 'text-contact-red')
           }
+          gsap.set('.footer', {
+            borderColor: '#F99B7D',
+          })
+          gsap.set('.mouse', {
+            color: '#F99B7D',
+          })
+          gsap.set('.dotted-line', {
+            borderColor: '#F99B7D',
+          })
+          gsap.set('.right-arrow', {
+            color: '#F99B7D',
+          })
+          gsap.to('.footer-text', {
+            x: 87,
+            duration: 1,
+            backgroundColor: '#F99B7D',
+            text: { value: '4' },
+          })
+          document.getElementById('divider')?.classList.replace('divide-footer-number-green', 'divide-footer-number-ured')
         },
         onLeaveBack() {
           const element = document.getElementsByClassName('nav-t')
           for (let i = 0; i < element.length; i++) {
             element[i].classList.replace('text-contact-red', 'text-team-green')
           }
+          gsap.set('.footer', {
+            borderColor: '#A0D8B3',
+          })
+          gsap.set('.mouse', {
+            color: '#A0D8B3',
+          })
+          gsap.set('.dotted-line', {
+            borderColor: '#A0D8B3',
+          })
+          gsap.set('.right-arrow', {
+            color: '#A0D8B3',
+          })
+          gsap.to('.footer-text', {
+            x: 59,
+            duration: 1,
+            backgroundColor: '#A0D8B3',
+            text: { value: '3' },
+          })
+          document.getElementById('divider')?.classList.replace('divide-footer-number-ured', 'divide-footer-number-green')
         },
         end: () => '+=' + window.innerWidth,
       },
