@@ -80,7 +80,7 @@ function AboutScroll() {
           gsap.set('.scroll-text', {backgroundColor:"#9376E0"})
           gsap.to(
             '.scroll-text',
-            { x: 200, duration: 1, scrollTrigger: {
+            { x: '15vw', duration: 1, scrollTrigger: {
               start: 'top top',
               trigger: ".a3",
               markers: false,
@@ -121,6 +121,7 @@ function AboutScroll() {
           document
             .getElementById('divider')
             ?.classList.replace('divide-rectangle-purp', 'divide-nav-blue')
+            gsap.set('.scroll-text', {backgroundColor:"#BBE1FA"})
         },
         end: () => '+=' + window.innerWidth,
       },

@@ -56,9 +56,9 @@ function ContactScroll() {
               'divide-footer-number-ured'
             )
             gsap.set('.scroll-text', {backgroundColor:"#F99B7D"})
-            gsap.fromTo(
-                '.scroll-text',{x:450},
-                { x: 830, duration: 1, scrollTrigger: {
+            gsap.to(
+                '.scroll-text',
+                { x:"43vw", duration: 1, scrollTrigger: {
                   start: 'top top',
                   trigger: ".c2",
                   markers: false,

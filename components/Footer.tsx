@@ -46,7 +46,7 @@ function Footer() {
       </div>
       <div className="relative">
         <div className="dotted-line border-0 border-t-4 h-1 w-[50vw] border-dotted mt-2 ml-4 border-scroll-blue"></div>
-        <div className="absolute bottom-1 right-96 flex items-center justify-center w-full h-full">
+        <div className="absolute bottom-1 right-[21vw] flex items-center justify-center w-full h-full">
           <div className="scroll-text text-black bg-scroll-blue rounded-md font-Space-Grotesk h-6 w-16 text-center z-50">
             Scroll.
           </div>

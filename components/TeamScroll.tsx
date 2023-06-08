@@ -15,6 +15,7 @@ function TeamScroll() {
 
   useEffect(() => {
     let scrollArr = gsap.utils.toArray('.scroll-team')
+    console.log(scrollArr.length)
     let to = gsap.to(scrollArr, {
       xPercent: () => -100 * (scrollArr.length - 1),
       ease: Power2.easeInOut,
@@ -61,9 +62,9 @@ function TeamScroll() {
               'divide-footer-number-green'
             )
           gsap.set('.scroll-text', {backgroundColor:"#A0D8B3"})
-          gsap.fromTo(
-              '.scroll-text',{x:200},
-              { x: 450, duration: 1, scrollTrigger: {
+          gsap.to(
+              '.scroll-text',
+              { x:"30vw", duration: 1, scrollTrigger: {
                 start: 'top top',
                 trigger: ".t3",
                 markers: false,
