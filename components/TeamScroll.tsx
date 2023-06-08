@@ -60,6 +60,17 @@ function TeamScroll() {
               'divide-rectangle-purp',
               'divide-footer-number-green'
             )
+          gsap.set('.scroll-text', {backgroundColor:"#A0D8B3"})
+          gsap.fromTo(
+              '.scroll-text',{x:200},
+              { x: 450, duration: 1, scrollTrigger: {
+                start: 'top top',
+                trigger: ".t3",
+                markers: false,
+                scrub: 1,
+                end: () => '+=' + window.innerWidth,
+              } }
+            )
         },
         onLeaveBack() {
           const element = document.getElementsByClassName('nav-t')
@@ -93,10 +104,13 @@ function TeamScroll() {
               'divide-footer-number-green',
               'divide-rectangle-purp'
             )
+            gsap.set('.scroll-text', {backgroundColor:"#9376E0"})
         },
         end: () => '+=' + window.innerWidth,
       },
     })
+
+
     return () => {
       to.kill()
     }
@@ -126,7 +140,7 @@ function TeamScroll() {
           </div>
           <div
             ref={sectionRef}
-            className="scroll-team  h-screen w-screen flex justify-center items-center "
+            className="scroll-team  h-screen w-screen flex justify-center items-center t3"
           >
             <TeamMember3.default />
           </div>

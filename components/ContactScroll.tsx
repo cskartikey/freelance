@@ -55,6 +55,17 @@ function ContactScroll() {
               'divide-footer-number-green',
               'divide-footer-number-ured'
             )
+            gsap.set('.scroll-text', {backgroundColor:"#F99B7D"})
+            gsap.fromTo(
+                '.scroll-text',{x:450},
+                { x: 830, duration: 1, scrollTrigger: {
+                  start: 'top top',
+                  trigger: ".c2",
+                  markers: false,
+                  scrub: 1,
+                  end: () => '+=' + window.innerWidth,
+                } }
+              )
         },
         onLeaveBack() {
           const element = document.getElementsByClassName('nav-t')
@@ -85,6 +96,7 @@ function ContactScroll() {
               'divide-footer-number-ured',
               'divide-footer-number-green'
             )
+            gsap.set('.scroll-text', {backgroundColor:"#A0D8B3"})
         },
         end: () => '+=' + window.innerWidth,
       },
@@ -106,7 +118,7 @@ function ContactScroll() {
           </div>
           <div
             ref={sectionRef}
-            className="scroll-contact h-screen w-screen flex justify-center items-center "
+            className="scroll-contact h-screen w-screen flex justify-center items-center c2"
           >
             <Contact />
           </div>

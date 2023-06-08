@@ -59,9 +59,6 @@ function AboutScroll() {
             )
           }
           console.log(sectionRef.current)
-          // gsap.fromTo(".scroll-text",{
-          //   x:-50
-          // },{x:100, duration: 1})
           gsap.set('.footer', {
             borderColor: '#9376E0',
           })
@@ -80,6 +77,17 @@ function AboutScroll() {
             backgroundColor: '#F3BCC8',
             text: { value: '2' },
           })
+          gsap.set('.scroll-text', {backgroundColor:"#9376E0"})
+          gsap.to(
+            '.scroll-text',
+            { x: 200, duration: 1, scrollTrigger: {
+              start: 'top top',
+              trigger: ".a3",
+              markers: false,
+              scrub: 1,
+              end: () => '+=' + window.innerWidth,
+            } }
+          )
           document
             .getElementById('divider')
             ?.classList.replace('divide-nav-blue', 'divide-rectangle-purp')
@@ -117,6 +125,8 @@ function AboutScroll() {
         end: () => '+=' + window.innerWidth,
       },
     })
+    
+
     return () => {
       to.kill()
     }
@@ -134,13 +144,13 @@ function AboutScroll() {
           </div>
           <div
             ref={sectionRef}
-            className="scroll h-screen w-screen flex justify-center items-center "
+            className="scroll h-screen w-screen flex justify-center items-center"
           >
             <AboutUS_2 />
           </div>
           <div
             ref={sectionRef}
-            className="scroll  h-screen w-screen flex justify-center items-center "
+            className="scroll  h-screen w-screen flex justify-center items-center a3"
           >
             <AboutUS_3 />
           </div>
