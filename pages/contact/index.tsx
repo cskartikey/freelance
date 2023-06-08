@@ -1,9 +1,7 @@
 import { type NextPage } from 'next'
-import Head from 'next/head'
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import TypewriterComponent from 'typewriter-effect'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 
@@ -16,9 +14,6 @@ const Contact: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>Contact</title>
-      </Head>
       <section>
         <div className="flex justify-center items-center h-screen">
           <div className="flex flex-row gap-3 justify-center absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 md:max-w-[700px] z-50">

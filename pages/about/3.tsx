@@ -1,11 +1,8 @@
 import { type NextPage } from 'next'
-import Head from 'next/head'
 import {
   faEye,
   faHandshake,
-  faLaptopCode,
   faLightbulb,
-  faMobileAndroid,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHand } from '@fortawesome/free-regular-svg-icons'

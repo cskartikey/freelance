@@ -1,5 +1,4 @@
 import { type NextPage } from 'next'
-import Head from 'next/head'
 import { faFigma, faReact, faNodeJs } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
@@ -14,9 +13,6 @@ const AboutUS: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>About</title>
-      </Head>
       <section>
         <div className="flex flex-col gap-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:max-w-[700px] z-50">
           <div className="flex flex-row gap-3 justify-center z-50">

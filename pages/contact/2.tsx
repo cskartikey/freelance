@@ -1,5 +1,4 @@
 import { type NextPage } from 'next'
-import Head from 'next/head'
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,9 +6,6 @@ import Link from 'next/link'
 const Contact: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>Contact</title>
-      </Head>
       <section>
         <div className="flex justify-center items-center h-screen">
           <div className="flex flex-col space-y-12 pb-24 text-white font-Poppins text-4xl">

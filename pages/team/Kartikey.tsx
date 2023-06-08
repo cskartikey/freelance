@@ -1,11 +1,9 @@
 import { type NextPage } from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import kartikeyAvatar from '../../assets/png/kartikey.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faInstagram,
   faGithub,
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
@@ -14,9 +12,6 @@ import { faEnvelopesBulk } from '@fortawesome/free-solid-svg-icons'
 const Kartikey: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>Team</title>
-      </Head>
       <section className="w-screen">
         <div className="flex gap-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 space-x-7">
           <div className="flex flex-col gap-16 max-w-[400px]">

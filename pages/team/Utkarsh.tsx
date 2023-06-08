@@ -1,5 +1,4 @@
 import { type NextPage } from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import dummyAvatar from '../../assets/png/avatar.jpg'
@@ -10,9 +9,6 @@ import { faEnvelopesBulk } from '@fortawesome/free-solid-svg-icons'
 const Utkarsh: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>Team</title>
-      </Head>
       <section className="w-screen">
         <div className="flex gap-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <div className="flex flex-col gap-16 max-w-[550px]">

@@ -1,20 +1,6 @@
 import { type NextPage } from 'next'
-import Typewriter from 'typewriter-effect'
-import { useEffect, useState } from 'react'
-import { useRouter } from 'next/router'
 
 const TeamMember: NextPage = () => {
-  let [typingStatus, setTypingStatus] = useState<boolean>(false)
-  const router = useRouter()
-
-  useEffect(() => {
-    window.onscroll = () => {
-      if (scrollY > window.innerHeight * 3 - 10 && typingStatus === false)
-        setTypingStatus(true)
-    }
-    if (window.location.pathname.includes('/team')) router.push('/')
-  }, [])
-
   return (
     <>
       <section className="w-screen h-screen">
