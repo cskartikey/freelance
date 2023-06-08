@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import { TextPlugin } from 'gsap/dist/TextPlugin'
 import { Power2 } from 'gsap'
 import AboutUS from '@/pages/about'
 import AboutUS_2 from '@/pages/about/2'
@@ -10,11 +11,10 @@ function AboutScroll() {
   const sectionRef = useRef(null)
   const triggerRef = useRef(null)
 
-  gsap.registerPlugin(ScrollTrigger)
+  gsap.registerPlugin(ScrollTrigger, TextPlugin)
 
   useEffect(() => {
-    let scrollArr = gsap.utils.toArray('.scroll')
-
+    let scrollArr = gsap.utils.toArray<HTMLElement>('.scroll')
     gsap.set('.rect-abt-l', {
       x: 60,
       y: 80,
@@ -52,14 +52,44 @@ function AboutScroll() {
         onEnter: function () {
           const navBarText = document.getElementsByClassName('nav-t')
           for (let i = 0; i < navBarText.length; i++) {
-            navBarText[i].classList.replace('text-nav-blue', 'text-rectangle-purp')
+            navBarText[i].classList.replace(
+              'text-nav-blue',
+              'text-rectangle-purp'
+            )
           }
+          gsap.set('.footer', {
+            borderColor: '#9376E0',
+          })
+          gsap.set('.mouse', {
+            color: '#9376E0',
+          })
+          gsap.set('.dotted-line', {
+            borderColor: '#9376E0',
+          })
+          gsap.set('.right-arrow', {
+            color: '#9376E0',
+          })
+          gsap.to('.footer-text', {
+            x: 30,
+            duration: 1,
+            backgroundColor: '#F3BCC8',
+            text: { value: '2' },
+          })
         },
         onLeaveBack() {
           const navBarText = document.getElementsByClassName('nav-t')
           for (let i = 0; i < navBarText.length; i++) {
-            navBarText[i].classList.replace('text-rectangle-purp', 'text-nav-blue')
+            navBarText[i].classList.replace(
+              'text-rectangle-purp',
+              'text-nav-blue'
+            )
           }
+          gsap.to('.footer-text', {
+            x: 0,
+            duration: 1,
+            backgroundColor: '#BBE1FA',
+            text: { value: '1' },
+          })
         },
         end: () => '+=' + window.innerWidth,
       },
@@ -72,11 +102,11 @@ function AboutScroll() {
   return (
     <section className="overflow-hidden" id="about-scroll">
       <div ref={triggerRef}>
-        <div
-          ref={sectionRef}
-          className="h-screen w-[350vw] flex relative bg-purp-rectangle-pattern"
-        >
-          <div className="scroll h-screen w-screen flex justify-center items-center">
+        <div className="h-screen w-[350vw] flex relative bg-purp-rectangle-pattern wrap">
+          <div
+            className="scroll h-screen w-screen flex justify-center items-center n1"
+            ref={sectionRef}
+          >
             <AboutUS />
           </div>
           <div
