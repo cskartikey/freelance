@@ -24,11 +24,15 @@ const Kartikey: NextPage = () => {
               Hi There!
             </div>
             <p className="text-white text-lg font-Poppins">
-              I am <span className="stroke-team text-transparent text-5xl">Kartikey</span> S. Chauhan. I have experience working as a fullstack
-              developer and have had the opportunity to work with a variety of
-              technologies. I've worked on Android projects and have also worked
-              with Python. Some of my strengths include working with React JS,
-              NodeJS, Tailwind CSS, and MongoDB.
+              I am{' '}
+              <span className="stroke-team text-transparent text-5xl">
+                Kartikey
+              </span>{' '}
+              S. Chauhan. I have experience working as a fullstack developer and
+              have had the opportunity to work with a variety of technologies.
+              I've worked on Android projects and have also worked with Python.
+              Some of my strengths include working with React JS, NodeJS,
+              Tailwind CSS, and MongoDB.
             </p>
           </div>
           <div className="flex flex-col max-w-[400px] w-full items-center gap-2">

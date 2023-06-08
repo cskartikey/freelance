@@ -20,12 +20,15 @@ const Utkarsh: NextPage = () => {
               Hi There!
             </div>
             <p className="text-white text-lg font-Poppins">
-              I am Kunwar <span className="stroke-team text-transparent text-5xl">Utkarsh</span>. I have around 4 years of experience in
-              Graphics Designing. Being fascinated by web development, the
-              creative side of mine paid off to make me a skilled Designer. I am
-              proficient in GIMP, Figma, Krita, Inkscape, Photoshop and
-              AfterEffects. I’m the one responsible for making your website’s
-              designs truly magnificent.
+              I am Kunwar{' '}
+              <span className="stroke-team text-transparent text-5xl">
+                Utkarsh
+              </span>
+              . I have around 4 years of experience in Graphics Designing. Being
+              fascinated by web development, the creative side of mine paid off
+              to make me a skilled Designer. I am proficient in GIMP, Figma,
+              Krita, Inkscape, Photoshop and AfterEffects. I’m the one
+              responsible for making your website’s designs truly magnificent.
             </p>
           </div>
           <div className="flex flex-col max-w-[400px] w-full items-center gap-2">

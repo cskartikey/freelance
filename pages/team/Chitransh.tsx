@@ -24,12 +24,16 @@ const Chitransh: NextPage = () => {
               Hi There!
             </div>
             <p className="text-white text-lg font-Poppins">
-              I'm <span className="stroke-team text-transparent text-5xl">Chitransh</span> Verma, a passionate programmer who began this journey at
-              13. From game development in Godot to specializing in web
-              technologies like Next.js, Electron.js, Chakra UI, React.js, and
-              Node.js, I've continuously honed my skills. With a drive for
-              excellence, I thrive on challenges and to strive for excellence in
-              every project I undertake.
+              I'm{' '}
+              <span className="stroke-team text-transparent text-5xl">
+                Chitransh
+              </span>{' '}
+              Verma, a passionate programmer who began this journey at 13. From
+              game development in Godot to specializing in web technologies like
+              Next.js, Electron.js, Chakra UI, React.js, and Node.js, I've
+              continuously honed my skills. With a drive for excellence, I
+              thrive on challenges and to strive for excellence in every project
+              I undertake.
             </p>
           </div>
           <div className="flex flex-col max-w-[400px] w-full items-center gap-2">
