@@ -39,17 +39,16 @@ function AboutScroll() {
 
     let to = gsap.to(scrollArr, {
       xPercent: () => -100 * (scrollArr.length - 1),
-      ease: Power2.easeInOut,
+      ease: "none",
       scrollTrigger: {
         start: 'top top',
         trigger: triggerRef.current,
         markers: false,
         pin: true,
         pinSpacing: true,
-        scrub: 0.8,
+        scrub: 0.6,
         invalidateOnRefresh: true,
         anticipatePin: 1,
-        snap: 1 / (scrollArr.length - 1),
         onEnter: function () {
           const navBarText = document.getElementsByClassName('nav-t')
           for (let i = 0; i < navBarText.length; i++) {
@@ -77,17 +76,18 @@ function AboutScroll() {
             backgroundColor: '#F3BCC8',
             text: { value: '2' },
           })
-          gsap.set('.scroll-text', {backgroundColor:"#9376E0"})
-          gsap.to(
-            '.scroll-text',
-            { x: '15vw', duration: 1, scrollTrigger: {
+          gsap.set('.scroll-text', { backgroundColor: '#9376E0' })
+          gsap.to('.scroll-text', {
+            x: '15vw',
+            duration: 1,
+            scrollTrigger: {
               start: 'top top',
-              trigger: ".a3",
+              trigger: '.a3',
               markers: false,
               scrub: 1,
               end: () => '+=' + window.innerWidth,
-            } }
-          )
+            },
+          })
           document
             .getElementById('divider')
             ?.classList.replace('divide-nav-blue', 'divide-rectangle-purp')
@@ -121,12 +121,11 @@ function AboutScroll() {
           document
             .getElementById('divider')
             ?.classList.replace('divide-rectangle-purp', 'divide-nav-blue')
-            gsap.set('.scroll-text', {backgroundColor:"#BBE1FA"})
+          gsap.set('.scroll-text', { backgroundColor: '#BBE1FA' })
         },
         end: () => '+=' + window.innerWidth,
       },
     })
-    
 
     return () => {
       to.kill()

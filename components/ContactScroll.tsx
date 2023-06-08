@@ -15,17 +15,16 @@ function ContactScroll() {
     let scrollArr = gsap.utils.toArray('.scroll-contact')
     let to = gsap.to(scrollArr, {
       xPercent: () => -100 * (scrollArr.length - 1),
-      ease: Power2.easeInOut,
+      ease: "none",
       scrollTrigger: {
         start: 'top top',
         trigger: triggerRef.current,
         markers: false,
         pin: true,
         pinSpacing: true,
-        scrub: 0.8,
+        scrub: 0.6,
         invalidateOnRefresh: true,
         anticipatePin: 1,
-        snap: 1 / (scrollArr.length - 1),
         onEnter: function () {
           const element = document.getElementsByClassName('nav-t')
           for (let i = 0; i < element.length; i++) {
@@ -55,17 +54,18 @@ function ContactScroll() {
               'divide-footer-number-green',
               'divide-footer-number-ured'
             )
-            gsap.set('.scroll-text', {backgroundColor:"#F99B7D"})
-            gsap.to(
-                '.scroll-text',
-                { x:"43vw", duration: 1, scrollTrigger: {
-                  start: 'top top',
-                  trigger: ".c2",
-                  markers: false,
-                  scrub: 1,
-                  end: () => '+=' + window.innerWidth,
-                } }
-              )
+          gsap.set('.scroll-text', { backgroundColor: '#F99B7D' })
+          gsap.to('.scroll-text', {
+            x: '43vw',
+            duration: 1,
+            scrollTrigger: {
+              start: 'top top',
+              trigger: '.c2',
+              markers: false,
+              scrub: 1,
+              end: () => '+=' + window.innerWidth,
+            },
+          })
         },
         onLeaveBack() {
           const element = document.getElementsByClassName('nav-t')
@@ -96,7 +96,7 @@ function ContactScroll() {
               'divide-footer-number-ured',
               'divide-footer-number-green'
             )
-            gsap.set('.scroll-text', {backgroundColor:"#A0D8B3"})
+          gsap.set('.scroll-text', { backgroundColor: '#A0D8B3' })
         },
         end: () => '+=' + window.innerWidth,
       },
@@ -109,11 +109,11 @@ function ContactScroll() {
   return (
     <section className="overflow-hidden" id="contact-scroll">
       <div ref={triggerRef}>
-        <div
-          ref={sectionRef}
-          className="h-screen w-[350vw] flex relative bg-red-rectangle-pattern"
-        >
-          <div className="scroll-contact h-screen w-screen flex justify-center items-center">
+        <div className="h-screen w-[350vw] flex relative bg-red-rectangle-pattern">
+          <div
+            className="scroll-contact h-screen w-screen flex justify-center items-center"
+            ref={sectionRef}
+          >
             <ContactUS />
           </div>
           <div

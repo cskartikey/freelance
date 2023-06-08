@@ -2,10 +2,10 @@ import React, { useRef, useEffect, useState } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { Power2 } from 'gsap'
-import TeamMember from '@/pages/team'
-import * as TeamMember1 from '@/pages/team/Kartikey'
-import * as TeamMember2 from '@/pages/team/Utkarsh'
-import * as TeamMember3 from '@/pages/team/Chitransh'
+import Team from '@/pages/team'
+import Kartikey from '@/pages/team/Kartikey'
+import Chitransh from '@/pages/team/Chitransh'
+import Utkarsh from '@/pages/team/Utkarsh'
 
 function TeamScroll() {
   const sectionRef = useRef(null)
@@ -18,17 +18,17 @@ function TeamScroll() {
     console.log(scrollArr.length)
     let to = gsap.to(scrollArr, {
       xPercent: () => -100 * (scrollArr.length - 1),
-      ease: Power2.easeInOut,
+      ease: "none",
+      duration: 1,
       scrollTrigger: {
         start: 'top top',
         trigger: triggerRef.current,
         markers: false,
         pin: true,
         pinSpacing: true,
-        scrub: 0.8,
+        scrub: 0.6,
         invalidateOnRefresh: true,
         anticipatePin: 1,
-        snap: [0, 0.435, 0.56, 1],
         onEnter: function () {
           const element = document.getElementsByClassName('nav-t')
           for (let i = 0; i < element.length; i++) {
@@ -61,17 +61,18 @@ function TeamScroll() {
               'divide-rectangle-purp',
               'divide-footer-number-green'
             )
-          gsap.set('.scroll-text', {backgroundColor:"#A0D8B3"})
-          gsap.to(
-              '.scroll-text',
-              { x:"30vw", duration: 1, scrollTrigger: {
-                start: 'top top',
-                trigger: ".t3",
-                markers: false,
-                scrub: 1,
-                end: () => '+=' + window.innerWidth,
-              } }
-            )
+          gsap.set('.scroll-text', { backgroundColor: '#A0D8B3' })
+          gsap.to('.scroll-text', {
+            x: '30vw',
+            duration: 1,
+            scrollTrigger: {
+              start: 'top top',
+              trigger: '.t3',
+              markers: false,
+              scrub: 1,
+              end: () => '+=' + window.innerWidth,
+            },
+          })
         },
         onLeaveBack() {
           const element = document.getElementsByClassName('nav-t')
@@ -105,12 +106,11 @@ function TeamScroll() {
               'divide-footer-number-green',
               'divide-rectangle-purp'
             )
-            gsap.set('.scroll-text', {backgroundColor:"#9376E0"})
+          gsap.set('.scroll-text', { backgroundColor: '#9376E0' })
         },
         end: () => '+=' + window.innerWidth,
       },
     })
-
 
     return () => {
       to.kill()
@@ -120,30 +120,30 @@ function TeamScroll() {
   return (
     <section className="overflow-hidden" id="team-scroll">
       <div ref={triggerRef}>
-        <div
-          ref={sectionRef}
-          className="h-screen w-[460vw] flex relative bg-green-triange-pattern"
-        >
-          <div className="scroll-team h-screen w-screen flex justify-center items-center">
-            <TeamMember />
+        <div className="h-screen w-[460vw] flex relative bg-green-triange-pattern">
+          <div
+            className="scroll-team h-screen w-screen flex justify-center items-center"
+            ref={sectionRef}
+          >
+            <Team />
           </div>
           <div
             ref={sectionRef}
             className="scroll-team h-screen w-screen flex justify-center items-center "
           >
-            <TeamMember1.default />
+            <Kartikey />
           </div>
           <div
             ref={sectionRef}
             className="scroll-team  h-screen w-screen flex justify-center items-center "
           >
-            <TeamMember2.default />
+            <Chitransh />
           </div>
           <div
             ref={sectionRef}
             className="scroll-team  h-screen w-screen flex justify-center items-center t3"
           >
-            <TeamMember3.default />
+            <Utkarsh />
           </div>
         </div>
       </div>
