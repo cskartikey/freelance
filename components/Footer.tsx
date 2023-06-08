@@ -20,7 +20,8 @@ function Footer() {
         </Link>
       </div>
       <div
-        className={`footer grid grid-cols-4 divide-x-2 divide-opacity-50 divide-nav-blue border-solid border-2 border-nav-blue ml-36 border-opacity-50 font-Space-Mono z-50`}  id="divider"
+        className={`footer grid grid-cols-4 divide-x-2 divide-opacity-50 divide-nav-blue border-solid border-2 border-nav-blue ml-36 border-opacity-50 font-Space-Mono z-50`}
+        id="divider"
       >
         <div
           className={`footer-text bg-scroll-blue text-black opacity-90 px-2 text-lg`}

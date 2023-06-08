@@ -36,6 +36,7 @@ function AboutScroll() {
     })
     tl.to('.rect-abt-l', { x: -40, y: -20, borderBottom: 2, borderRight: 2 })
     tl.to('.rect-abt-r', { x: 40, y: 20, borderBottom: 2, borderRight: 2 }, '<')
+
     let to = gsap.to(scrollArr, {
       xPercent: () => -100 * (scrollArr.length - 1),
       ease: Power2.easeInOut,
@@ -57,6 +58,10 @@ function AboutScroll() {
               'text-rectangle-purp'
             )
           }
+          console.log(sectionRef.current)
+          // gsap.fromTo(".scroll-text",{
+          //   x:-50
+          // },{x:100, duration: 1})
           gsap.set('.footer', {
             borderColor: '#9376E0',
           })
@@ -75,7 +80,9 @@ function AboutScroll() {
             backgroundColor: '#F3BCC8',
             text: { value: '2' },
           })
-          document.getElementById('divider')?.classList.replace('divide-nav-blue', 'divide-rectangle-purp')
+          document
+            .getElementById('divider')
+            ?.classList.replace('divide-nav-blue', 'divide-rectangle-purp')
         },
         onLeaveBack() {
           const navBarText = document.getElementsByClassName('nav-t')
@@ -103,7 +110,9 @@ function AboutScroll() {
             backgroundColor: '#BBE1FA',
             text: { value: '1' },
           })
-          document.getElementById('divider')?.classList.replace('divide-rectangle-purp', 'divide-nav-blue')
+          document
+            .getElementById('divider')
+            ?.classList.replace('divide-rectangle-purp', 'divide-nav-blue')
         },
         end: () => '+=' + window.innerWidth,
       },

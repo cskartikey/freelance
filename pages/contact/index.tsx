@@ -8,14 +8,11 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 
 const Contact: NextPage = () => {
-
   const router = useRouter()
 
   useEffect(() => {
-    if(window.location.pathname.includes('/contact'))
-      router.push('/')
+    if (window.location.pathname.includes('/contact')) router.push('/')
   }, [])
-
 
   return (
     <>

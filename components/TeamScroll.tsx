@@ -54,7 +54,12 @@ function TeamScroll() {
             backgroundColor: '#A0D8B3',
             text: { value: '3' },
           })
-          document.getElementById('divider')?.classList.replace('divide-rectangle-purp', 'divide-footer-number-green')
+          document
+            .getElementById('divider')
+            ?.classList.replace(
+              'divide-rectangle-purp',
+              'divide-footer-number-green'
+            )
         },
         onLeaveBack() {
           const element = document.getElementsByClassName('nav-t')
@@ -82,7 +87,12 @@ function TeamScroll() {
             backgroundColor: '#F3BCC8',
             text: { value: '2' },
           })
-          document.getElementById('divider')?.classList.replace('divide-footer-number-green', 'divide-rectangle-purp')
+          document
+            .getElementById('divider')
+            ?.classList.replace(
+              'divide-footer-number-green',
+              'divide-rectangle-purp'
+            )
         },
         end: () => '+=' + window.innerWidth,
       },

@@ -29,10 +29,21 @@ const AboutUS_3: NextPage = () => {
             />
           </div>
           <h1 className="font-Poppins text-white text-3xl text-center md:text-4xl">
-          <span className="craft-anim text-5xl text-transparent">Collaborative </span> Approach: Your Vision, Our Expertise
+            <span className="craft-anim text-5xl text-transparent">
+              Collaborative{' '}
+            </span>{' '}
+            Approach: Your Vision, Our Expertise
           </h1>
           <h3 className="font-Space-Grotesk text-white text-xl text-center md:text-2xl">
-            We emphasize our collaborative approach to website development. We understand the significance of <span className='underline underline-offset-2'>aligning our expertise with your vision</span>. By working closely with you, we ensure that your unique requirements and goals are met throughout the development process. Together, we'll bring your ideas to life and create a website that exceeds your expectations.
+            We emphasize our collaborative approach to website development. We
+            understand the significance of{' '}
+            <span className="underline underline-offset-2">
+              aligning our expertise with your vision
+            </span>
+            . By working closely with you, we ensure that your unique
+            requirements and goals are met throughout the development process.
+            Together, we'll bring your ideas to life and create a website that
+            exceeds your expectations.
           </h3>
         </div>
       </section>

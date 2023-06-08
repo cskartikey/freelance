@@ -6,12 +6,10 @@ import Link from 'next/link'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 const AboutUS: NextPage = () => {
-
   const router = useRouter()
 
   useEffect(() => {
-    if(window.location.pathname.includes('/about'))
-      router.push('/')
+    if (window.location.pathname.includes('/about')) router.push('/')
   }, [])
 
   return (

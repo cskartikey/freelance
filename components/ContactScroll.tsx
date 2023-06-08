@@ -49,7 +49,12 @@ function ContactScroll() {
             backgroundColor: '#F99B7D',
             text: { value: '4' },
           })
-          document.getElementById('divider')?.classList.replace('divide-footer-number-green', 'divide-footer-number-ured')
+          document
+            .getElementById('divider')
+            ?.classList.replace(
+              'divide-footer-number-green',
+              'divide-footer-number-ured'
+            )
         },
         onLeaveBack() {
           const element = document.getElementsByClassName('nav-t')
@@ -74,7 +79,12 @@ function ContactScroll() {
             backgroundColor: '#A0D8B3',
             text: { value: '3' },
           })
-          document.getElementById('divider')?.classList.replace('divide-footer-number-ured', 'divide-footer-number-green')
+          document
+            .getElementById('divider')
+            ?.classList.replace(
+              'divide-footer-number-ured',
+              'divide-footer-number-green'
+            )
         },
         end: () => '+=' + window.innerWidth,
       },
