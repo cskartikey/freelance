@@ -15,7 +15,6 @@ function TeamScroll() {
 
   useEffect(() => {
     let scrollArr = gsap.utils.toArray('.scroll-team')
-    console.log(scrollArr.length)
     let to = gsap.to(scrollArr, {
       xPercent: () => -100 * (scrollArr.length - 1),
       ease: 'none',
@@ -74,7 +73,9 @@ function TeamScroll() {
             },
           })
           gsap.to('.team-typing-text', {
-            text: { value: 'Unleashing the Power of Collaboration: Meet Our Team!' },
+            text: {
+              value: 'Unleashing the Power of Collaboration: Meet Our Team!',
+            },
             duration: 3,
             delay: 0.2,
             ease: 'none',

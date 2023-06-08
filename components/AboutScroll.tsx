@@ -31,12 +31,54 @@ function AboutScroll() {
       borderLeft: 2,
       borderBottom: 0,
     })
-    let tl = gsap.timeline({
-      defaults: { duration: 2, ease: Power2.easeInOut, opacity: 1 },
+    gsap.set('.rect-abt2-l', {
+      x: 60,
+      y: 80,
+      borderRight: 0,
+      borderTop: 2,
+      borderLeft: 2,
+      borderBottom: 0,
     })
-    tl.to('.rect-abt-l', { x: -40, y: -20, borderBottom: 2, borderRight: 2 })
-    tl.to('.rect-abt-r', { x: 40, y: 20, borderBottom: 2, borderRight: 2 }, '<')
-
+    gsap.set('.rect-abt2-r', {
+      x: 235,
+      y: 15,
+      borderRight: 0,
+      borderTop: 2,
+      borderLeft: 2,
+      borderBottom: 0,
+    })
+    gsap.set('.rect-abt2-r2', {
+      x: -62,
+      y: 160,
+      borderRight: 0,
+      borderTop: 2,
+      borderLeft: 2,
+      borderBottom: 0,
+    })
+    gsap.set('.rect-abt3-l', {
+      x: 60,
+      y: 80,
+      borderRight: 0,
+      borderTop: 2,
+      borderLeft: 2,
+      borderBottom: 0,
+    })
+    gsap.set('.rect-abt3-r', {
+      x: 235,
+      y: 15,
+      borderRight: 0,
+      borderTop: 2,
+      borderLeft: 2,
+      borderBottom: 0,
+    })
+    gsap.set('.rect-abt3-r2', {
+      x: -62,
+      y: 160,
+      borderRight: 0,
+      borderTop: 2,
+      borderLeft: 2,
+      borderBottom: 0,
+    })
     let to = gsap.to(scrollArr, {
       xPercent: () => -100 * (scrollArr.length - 1),
       ease: 'none',
@@ -57,7 +99,6 @@ function AboutScroll() {
               'text-rectangle-purp'
             )
           }
-          console.log(sectionRef.current)
           gsap.set('.footer', {
             borderColor: '#9376E0',
           })
@@ -91,6 +132,20 @@ function AboutScroll() {
           document
             .getElementById('divider')
             ?.classList.replace('divide-nav-blue', 'divide-rectangle-purp')
+          let abt1 = gsap.timeline({
+            defaults: { duration: 2, ease: Power2.easeInOut, opacity: 1 },
+          })
+          abt1.to('.rect-abt-l', {
+            x: -40,
+            y: -20,
+            borderBottom: 2,
+            borderRight: 2,
+          })
+          abt1.to(
+            '.rect-abt-r',
+            { x: 40, y: 20, borderBottom: 2, borderRight: 2 },
+            '<'
+          )
         },
         onLeaveBack() {
           const navBarText = document.getElementsByClassName('nav-t')
@@ -126,7 +181,44 @@ function AboutScroll() {
         end: () => '+=' + window.innerWidth,
       },
     })
-
+    let abt2 = gsap.timeline({
+      defaults: { duration: 2, ease: Power2.easeInOut, opacity: 1 },
+      scrollTrigger: {
+        start: 'top -20%',
+        trigger: '.a2',
+        invalidateOnRefresh: true,
+      },
+    })
+    abt2.to('.rect-abt2-l', { x: -40, y: -20, borderBottom: 2, borderRight: 2 })
+    abt2.to(
+      '.rect-abt2-r',
+      { x: 40, y: 20, borderBottom: 2, borderRight: 2 },
+      '<'
+    )
+    abt2.to(
+      '.rect-abt2-r2',
+      { x: 80, y: 20, borderBottom: 2, borderRight: 2 },
+      '<'
+    )
+    let abt3 = gsap.timeline({
+      defaults: { duration: 2, ease: Power2.easeInOut, opacity: 1 },
+      scrollTrigger: {
+        start: 'top -120%',
+        trigger: '.a3',
+        invalidateOnRefresh: true,
+      },
+    })
+    abt3.to('.rect-abt3-l', { x: 600, y: 350, borderBottom: 2, borderRight: 2 })
+    abt3.to(
+      '.rect-abt3-r',
+      { x: 40, y: 20, borderBottom: 2, borderRight: 2 },
+      '<'
+    )
+    abt3.to(
+      '.rect-abt3-r2',
+      { x: 80, y: 20, borderBottom: 2, borderRight: 2 },
+      '<'
+    )
     return () => {
       to.kill()
     }
@@ -137,14 +229,14 @@ function AboutScroll() {
       <div ref={triggerRef}>
         <div className="h-screen w-[350vw] flex relative bg-purp-rectangle-pattern wrap">
           <div
-            className="scroll h-screen w-screen flex justify-center items-center n1"
+            className="scroll h-screen w-screen flex justify-center items-center a1"
             ref={sectionRef}
           >
             <AboutUS />
           </div>
           <div
             ref={sectionRef}
-            className="scroll h-screen w-screen flex justify-center items-center"
+            className="scroll h-screen w-screen flex justify-center items-center a2"
           >
             <AboutUS_2 />
           </div>

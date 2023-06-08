@@ -15,8 +15,8 @@ const Contact: NextPage = () => {
           <div className="flex flex-col space-y-12 pb-24 text-white font-Poppins text-4xl">
             <div className="space-y-4 p-7 border-2 border-footer-number-ured border-opacity-33 hover:border-opacity-100 z-50">
               <h1 className="font-Space-Grotesk opacity-50 hover:opacity-100">
-                <Link href='mailto:freelance@kodec.tech'>
-                <FontAwesomeIcon
+                <Link href="mailto:freelance@kodec.tech">
+                  <FontAwesomeIcon
                     icon={faEnvelope}
                     className="text-footer-number-ured pr-4"
                   />{' '}
@@ -41,9 +41,7 @@ const Contact: NextPage = () => {
             </div>
             <div className="space-y-4 p-7 border-2 border-footer-number-ured border-opacity-33 hover:border-opacity-100 z-50">
               <Link href="https://www.instagram.com/kode.crumbs/">
-                <div
-                  className="font-Space-Grotesk opacity-50 hover:opacity-100"
-                >
+                <div className="font-Space-Grotesk opacity-50 hover:opacity-100">
                   <FontAwesomeIcon
                     icon={faInstagram}
                     className="text-footer-number-ured pr-4"
@@ -53,13 +51,13 @@ const Contact: NextPage = () => {
                     DM US
                   </span>
                 </div>
-                </Link>
+              </Link>
             </div>
           </div>
         </div>
         <div className="absolute w-[65vw] h-[85vh] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[1000px] max-h-[600px] opacity-50">
-          <div className="w-[500px] h-[350px] border-solid border-contact-red border rounded-md aboslute top-0 -mt-10 left-0 z-0"></div>
-          <div className="w-[700px] h-[400px] border-solid border-contact-red border rounded-md absolute -bottom-12 right-0 z-0 mb-20"></div>
+          <div className="rect-cnt2-l w-[500px] h-[350px] border-solid border-contact-red border rounded-md aboslute top-0 -mt-10 left-0 z-0"></div>
+          <div className="rect-cnt2-r w-[700px] h-[400px] border-solid border-contact-red border rounded-md absolute -bottom-12 right-0 z-0 mb-20"></div>
         </div>
       </section>
     </>

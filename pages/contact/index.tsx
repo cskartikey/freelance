@@ -37,7 +37,13 @@ const Contact: NextPage = () => {
           </div>
           <div className="flex flex-col space-y-8 b-36 text-white font-Poppins text-center text-5xl">
             <div className="space-y-4">
-              <h1>Do you want to start a <span className="stroke-contact text-transparent text-5xl">project</span> ,</h1>
+              <h1>
+                Do you want to start a{' '}
+                <span className="stroke-contact text-transparent text-5xl">
+                  project
+                </span>{' '}
+                ,
+              </h1>
               <h1 className="">or just say hi?</h1>
             </div>
 
@@ -47,8 +53,8 @@ const Contact: NextPage = () => {
           </div>
         </div>
         <div className="absolute w-[65vw] h-[85vh] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[1000px] max-h-[600px] opacity-50">
-          <div className="w-[700px] h-[400px] border-solid border-contact-red border-2 rounded-md aboslute top-0 mt-10 left-0 z-0"></div>
-          <div className="w-[700px] h-[400px] border-solid border-contact-red border-2 rounded-md absolute -bottom-12 right-0 z-0 mb-6"></div>
+          <div className="rect-cnt-l w-[700px] h-[400px] border-solid border-contact-red border-2 rounded-md aboslute top-0 mt-10 left-0 z-0"></div>
+          <div className="rect-cnt-r w-[700px] h-[400px] border-solid border-contact-red border-2 rounded-md absolute -bottom-12 right-0 z-0 mb-6"></div>
         </div>
       </section>
     </>
