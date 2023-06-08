@@ -44,7 +44,10 @@ export default function Hero() {
       <section>
         <div className="pr-40 mr-96 mb-12 ">
           <div className="absolute inset-0 flex justify-center items-center z-10">
-            <Image src={image} alt="" />
+            <Image
+              src={image}
+              alt="A landscape image of a person's hand writing on a notebook on a black wood table and a MacBook on it."
+            />
           </div>
           <div className="flex flex-col border-nav-blue space-y-4 border-l h-full pl-5 ">
             <span className="font-Hurricane text-white text-8xl z-20">

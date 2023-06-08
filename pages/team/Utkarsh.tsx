@@ -30,7 +30,7 @@ const Utkarsh: NextPage = () => {
           <div className="flex flex-col max-w-[400px] w-full items-center gap-2">
             <Image
               src={dummyAvatar}
-              alt={'people'}
+              alt={'portrait of Kunwar Utkarsh, our second Graphics Designer'}
               className="w-full h-auto max-w-[250px] rounded-md pointer-events-none"
             />
             <h3 className="text-white opacity-[0.5] text-2xl font-Space-Grotesk font-bold">
