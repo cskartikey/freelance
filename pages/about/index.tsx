@@ -3,7 +3,17 @@ import Head from 'next/head'
 import { faFigma, faReact, faNodeJs } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 const AboutUS: NextPage = () => {
+
+  const router = useRouter()
+
+  useEffect(() => {
+    if(window.location.pathname.includes('/about'))
+      router.push('/')
+  }, [])
+
   return (
     <>
       <Head>

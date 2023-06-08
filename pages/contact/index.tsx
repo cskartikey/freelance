@@ -4,7 +4,19 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import TypewriterComponent from 'typewriter-effect'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
+
 const Contact: NextPage = () => {
+
+  const router = useRouter()
+
+  useEffect(() => {
+    if(window.location.pathname.includes('/contact'))
+      router.push('/')
+  }, [])
+
+
   return (
     <>
       <Head>
