@@ -18,7 +18,7 @@ function ContactScroll() {
       ease: Power2.easeInOut,
       scrollTrigger: {
         start: 'top top',
-        trigger: sectionRef.current,
+        trigger: triggerRef.current,
         markers: false,
         pin: true,
         pinSpacing: true,
