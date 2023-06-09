@@ -10,7 +10,7 @@ const Contact: NextPage = () => {
         <div className="flex h-screen items-center justify-center">
           <div className="flex flex-col space-y-12 pb-24 font-Poppins text-4xl text-white">
             <Link href="mailto:freelance@kodec.tech" className="z-50">
-              <div className="group z-50 space-y-4 border-2 border-footer-number-ured border-opacity-33 p-7 hover:border-opacity-100">
+              <div className="group z-50 space-y-4 border-2 border-footer-number-ured border-opacity-33 p-7 hover:border-opacity-100 hover:scale-105">
                 <h1 className="font-Space-Grotesk opacity-50 group-hover:opacity-100">
                   <FontAwesomeIcon
                     icon={faEnvelope}
@@ -23,7 +23,7 @@ const Contact: NextPage = () => {
                 </h1>
               </div>
             </Link>
-            <div className="group z-50 space-y-4 border-2 border-footer-number-ured border-opacity-33 p-7 hover:border-opacity-100">
+            <div className="group z-50 space-y-4 border-2 border-footer-number-ured border-opacity-33 p-7 hover:border-opacity-100 hover:scale-105">
               <h1 className="font-Space-Grotesk opacity-50 group-hover:opacity-100">
                 <FontAwesomeIcon
                   icon={faPhone}
@@ -39,7 +39,7 @@ const Contact: NextPage = () => {
               href="https://www.instagram.com/kode.crumbs/"
               className="z-50"
             >
-              <div className="group z-50 space-y-4 border-2 border-footer-number-ured border-opacity-33 p-7 hover:border-opacity-100">
+              <div className="group z-50 space-y-4 border-2 border-footer-number-ured border-opacity-33 p-7 hover:border-opacity-100 hover:scale-105">
                 <div className="font-Space-Grotesk opacity-50 group-hover:opacity-100">
                   <FontAwesomeIcon
                     icon={faInstagram}
