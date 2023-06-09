@@ -1,11 +1,8 @@
-import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 import * as Scroll from 'react-scroll'
 import Link from 'next/link'
 
 export default function Nav() {
-  const router = useRouter()
-  const [navColor, setNavColor] = useState('text-nav-blue')
   const [currScrollEle, setCurrScrollEle] = useState('/')
 
   useEffect(() => {
@@ -27,17 +24,8 @@ export default function Nav() {
       )
         setCurrScrollEle('contact')
     })
-    // REDUNDANT
-    // if (router.pathname === '/') {
-    //   setNavColor('text-nav-blue')
-    // } else if (router.pathname.includes('/about')) {
-    //   setNavColor('text-rectangle-purp')
-    // } else if (router.pathname.includes('/team')) {
-    //   setNavColor('text-team-green')
-    // } else if (router.pathname.includes('/contact')) {
-    //   setNavColor('text-contact-red')
-    // }
-  }, [router.pathname])
+
+  })
 
   return (
     <nav
@@ -46,9 +34,9 @@ export default function Nav() {
       <div>
         <Link href="/">
           <p className="cursor-pointer font-Mansalva text-3xl text-white">
-            <span className={`nav-t font-Space-Grotesk ${navColor}`}>&lt;</span>
+            <span className={`nav-t font-Space-Grotesk text-nav-blue`}>&lt;</span>
             Freelance
-            <span className={`nav-t font-Space-Grotesk ${navColor}`}>
+            <span className={`nav-t font-Space-Grotesk text-nav-blue`}>
               /&gt;
             </span>
           </p>
