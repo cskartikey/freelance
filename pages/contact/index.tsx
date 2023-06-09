@@ -30,7 +30,7 @@ const Contact: NextPage = () => {
               className="text-5xl text-contact-red"
             />
           </div>
-          <div className="b-36 flex flex-col space-y-8 text-center font-Poppins text-5xl text-white">
+          <div className="b-36 flex flex-col space-y-8 text-center font-Poppins text-5xl text-white z-50">
             <div className="space-y-4">
               <h1>
                 Do you want to start a{' '}
