@@ -9,9 +9,9 @@ const Contact: NextPage = () => {
       <section>
         <div className="flex h-screen items-center justify-center">
           <div className="flex flex-col space-y-12 pb-24 font-Poppins text-4xl text-white">
-            <div className="z-50 space-y-4 border-2 border-footer-number-ured border-opacity-33 p-7 hover:border-opacity-100">
-              <h1 className="font-Space-Grotesk opacity-50 hover:opacity-100">
-                <Link href="mailto:freelance@kodec.tech">
+            <Link href="mailto:freelance@kodec.tech" className="z-50">
+              <div className="group z-50 space-y-4 border-2 border-footer-number-ured border-opacity-33 p-7 hover:border-opacity-100">
+                <h1 className="font-Space-Grotesk opacity-50 group-hover:opacity-100">
                   <FontAwesomeIcon
                     icon={faEnvelope}
                     className="pr-4 text-footer-number-ured"
@@ -20,11 +20,11 @@ const Contact: NextPage = () => {
                   <span className="pl-24 font-Poppins text-3xl font-bold">
                     MAIL US
                   </span>
-                </Link>
-              </h1>
-            </div>
-            <div className="z-50 space-y-4 border-2 border-footer-number-ured border-opacity-33 p-7 hover:border-opacity-100">
-              <h1 className="font-Space-Grotesk opacity-50 hover:opacity-100">
+                </h1>
+              </div>
+            </Link>
+            <div className="group z-50 space-y-4 border-2 border-footer-number-ured border-opacity-33 p-7 hover:border-opacity-100">
+              <h1 className="font-Space-Grotesk opacity-50 group-hover:opacity-100">
                 <FontAwesomeIcon
                   icon={faPhone}
                   className="pr-4 text-footer-number-ured"
@@ -35,9 +35,12 @@ const Contact: NextPage = () => {
                 </span>
               </h1>
             </div>
-            <div className="z-50 space-y-4 border-2 border-footer-number-ured border-opacity-33 p-7 hover:border-opacity-100">
-              <Link href="https://www.instagram.com/kode.crumbs/">
-                <div className="font-Space-Grotesk opacity-50 hover:opacity-100">
+            <Link
+              href="https://www.instagram.com/kode.crumbs/"
+              className="z-50"
+            >
+              <div className="group z-50 space-y-4 border-2 border-footer-number-ured border-opacity-33 p-7 hover:border-opacity-100">
+                <div className="font-Space-Grotesk opacity-50 group-hover:opacity-100">
                   <FontAwesomeIcon
                     icon={faInstagram}
                     className="pr-4 text-footer-number-ured"
@@ -47,8 +50,8 @@ const Contact: NextPage = () => {
                     DM US
                   </span>
                 </div>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
         <div className="absolute left-1/2 top-1/2 h-[85vh] max-h-[600px] w-[65vw] max-w-[1000px] -translate-x-1/2 -translate-y-1/2 opacity-50">
