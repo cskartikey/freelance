@@ -24,7 +24,6 @@ export default function Nav() {
       )
         setCurrScrollEle('contact')
     })
-
   })
 
   return (
@@ -34,7 +33,9 @@ export default function Nav() {
       <div>
         <Link href="/">
           <p className="cursor-pointer font-Mansalva text-3xl text-white">
-            <span className={`nav-t font-Space-Grotesk text-nav-blue`}>&lt;</span>
+            <span className={`nav-t font-Space-Grotesk text-nav-blue`}>
+              &lt;
+            </span>
             Freelance
             <span className={`nav-t font-Space-Grotesk text-nav-blue`}>
               /&gt;
