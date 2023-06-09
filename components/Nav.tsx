@@ -41,11 +41,11 @@ export default function Nav() {
 
   return (
     <nav
-      className={`flex justify-between pt-6 px-12 fixed top-0 left-0 z-50 w-full`}
+      className={`fixed left-0 top-0 z-50 flex w-full justify-between px-12 pt-6`}
     >
       <div>
         <Link href="/">
-          <p className="font-Mansalva text-white text-3xl cursor-pointer">
+          <p className="cursor-pointer font-Mansalva text-3xl text-white">
             <span className={`nav-t font-Space-Grotesk ${navColor}`}>&lt;</span>
             Freelance
             <span className={`nav-t font-Space-Grotesk ${navColor}`}>
@@ -54,12 +54,12 @@ export default function Nav() {
           </p>
         </Link>
       </div>
-      <div className="space-x-8 pt-4 z-50">
+      <div className="z-50 space-x-8 pt-4">
         <Scroll.Link
           to={'hero-section'}
           smooth={'easeOutQuad'}
           ignoreCancelEvents={true}
-          className={`font-Space-Grotesk-Bold text-white font-bold text-sm cursor-pointer ${
+          className={`font-Space-Grotesk-Bold cursor-pointer text-sm font-bold text-white ${
             currScrollEle === '/'
               ? 'opacity-100'
               : 'opacity-33 hover:opacity-66'
@@ -71,7 +71,7 @@ export default function Nav() {
           to={'about-scroll'}
           smooth={'easeOutQuad'}
           ignoreCancelEvents={true}
-          className={`font-Space-Grotesk-Bold text-white font-bold text-sm cursor-pointer ${
+          className={`font-Space-Grotesk-Bold cursor-pointer text-sm font-bold text-white ${
             currScrollEle.includes('about')
               ? 'opacity-100'
               : 'opacity-33 hover:opacity-66'
@@ -83,7 +83,7 @@ export default function Nav() {
           to={'team-scroll'}
           smooth={'easeOutQuad'}
           ignoreCancelEvents={true}
-          className={`font-Space-Grotesk-Bold text-white font-bold text-sm cursor-pointer ${
+          className={`font-Space-Grotesk-Bold cursor-pointer text-sm font-bold text-white ${
             currScrollEle.includes('team')
               ? 'opacity-100'
               : 'opacity-33 hover:opacity-66'
@@ -95,7 +95,7 @@ export default function Nav() {
           to={'contact-scroll'}
           smooth={'easeOutQuad'}
           ignoreCancelEvents={true}
-          className={`font-Space-Grotesk-Bold text-white font-bold text-sm cursor-pointer ${
+          className={`font-Space-Grotesk-Bold cursor-pointer text-sm font-bold text-white ${
             currScrollEle.includes('contact')
               ? 'opacity-100'
               : 'opacity-33 hover:opacity-66'

@@ -127,28 +127,28 @@ function TeamScroll() {
   return (
     <section className="overflow-hidden" id="team-scroll">
       <div ref={triggerRef}>
-        <div className="h-screen w-[460vw] flex relative bg-green-triange-pattern">
+        <div className="relative flex h-screen w-[460vw] bg-green-triange-pattern">
           <div
-            className="scroll-team h-screen w-screen flex justify-center items-center"
+            className="scroll-team flex h-screen w-screen items-center justify-center"
             ref={sectionRef}
           >
             <Team />
           </div>
           <div
             ref={sectionRef}
-            className="scroll-team h-screen w-screen flex justify-center items-center ta-2"
+            className="scroll-team ta-2 flex h-screen w-screen items-center justify-center"
           >
             <Kartikey />
           </div>
           <div
             ref={sectionRef}
-            className="scroll-team  h-screen w-screen flex justify-center items-center "
+            className="scroll-team  flex h-screen w-screen items-center justify-center "
           >
             <Chitransh />
           </div>
           <div
             ref={sectionRef}
-            className="scroll-team  h-screen w-screen flex justify-center items-center t3"
+            className="scroll-team  t3 flex h-screen w-screen items-center justify-center"
           >
             <Utkarsh />
           </div>

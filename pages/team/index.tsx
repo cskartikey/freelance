@@ -3,9 +3,9 @@ import { type NextPage } from 'next'
 const TeamMember: NextPage = () => {
   return (
     <>
-      <section className="w-screen h-screen">
-        <section className="max-w-[610px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center min-h-[200px]">
-          <div className="text-5xl font-Poppins text-white team-typing-text"></div>
+      <section className="h-screen w-screen">
+        <section className="absolute left-1/2 top-1/2 min-h-[200px] max-w-[610px] -translate-x-1/2 -translate-y-1/2 text-center">
+          <div className="team-typing-text font-Poppins text-5xl text-white"></div>
         </section>
       </section>
     </>

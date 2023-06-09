@@ -14,14 +14,14 @@ const Chitransh: NextPage = () => {
   return (
     <>
       <section className="w-screen">
-        <div className="flex gap-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <div className="flex flex-col gap-16 max-w-[550px]">
+        <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 gap-6">
+          <div className="flex max-w-[550px] flex-col gap-16">
             <div className="font-Space-Grotesk text-4xl text-white">
               Hi There!
             </div>
-            <p className="text-white text-lg font-Poppins">
+            <p className="font-Poppins text-lg text-white">
               I'm{' '}
-              <span className="stroke-team text-transparent text-5xl">
+              <span className="stroke-team text-5xl text-transparent">
                 Chitransh
               </span>{' '}
               Verma, a passionate programmer who began this journey at 13. From
@@ -32,19 +32,19 @@ const Chitransh: NextPage = () => {
               I undertake.
             </p>
           </div>
-          <div className="flex flex-col max-w-[400px] w-full items-center gap-2">
+          <div className="flex w-full max-w-[400px] flex-col items-center gap-2">
             <Image
               src={chitranshAvatar}
               alt={'portrait of Chitransh Verma, our second Web-Developer'}
-              className="w-full h-auto max-w-[250px] rounded-md pointer-events-none"
+              className="pointer-events-none h-auto w-full max-w-[250px] rounded-md"
             />
-            <h3 className="text-white opacity-[0.5] text-2xl font-Space-Grotesk font-bold">
+            <h3 className="font-Space-Grotesk text-2xl font-bold text-white opacity-[0.5]">
               Web-Developer
             </h3>
           </div>
         </div>
       </section>
-      <div className="absolute flex flex-col gap-4 left-[5%] bottom-[22vh]">
+      <div className="absolute bottom-[22vh] left-[5%] flex flex-col gap-4">
         <Link
           href="https://www.linkedin.com/in/thearcane"
           rel="noopener noreferrer"
@@ -52,7 +52,7 @@ const Chitransh: NextPage = () => {
         >
           <FontAwesomeIcon
             icon={faLinkedin}
-            className="text-footer-number-green text-3xl opacity-50 cursor-pointer hover:opacity-100 hover:text-4xl"
+            className="cursor-pointer text-3xl text-footer-number-green opacity-50 hover:text-4xl hover:opacity-100"
           />
         </Link>
         <Link
@@ -62,7 +62,7 @@ const Chitransh: NextPage = () => {
         >
           <FontAwesomeIcon
             icon={faGithub}
-            className="text-footer-number-green text-3xl opacity-50 cursor-pointer hover:opacity-100 hover:text-4xl"
+            className="cursor-pointer text-3xl text-footer-number-green opacity-50 hover:text-4xl hover:opacity-100"
           />
         </Link>
         <Link
@@ -72,7 +72,7 @@ const Chitransh: NextPage = () => {
         >
           <FontAwesomeIcon
             icon={faEnvelopesBulk}
-            className="text-footer-number-green text-3xl opacity-50 cursor-pointer hover:opacity-100 hover:text-4xl"
+            className="cursor-pointer text-3xl text-footer-number-green opacity-50 hover:text-4xl hover:opacity-100"
           />
         </Link>
       </div>

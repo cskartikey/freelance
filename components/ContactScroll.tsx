@@ -179,16 +179,16 @@ function ContactScroll() {
   return (
     <section className="overflow-hidden" id="contact-scroll">
       <div ref={triggerRef}>
-        <div className="h-screen w-[350vw] flex relative bg-red-rectangle-pattern">
+        <div className="relative flex h-screen w-[350vw] bg-red-rectangle-pattern">
           <div
-            className="scroll-contact h-screen w-screen flex justify-center items-center"
+            className="scroll-contact flex h-screen w-screen items-center justify-center"
             ref={sectionRef}
           >
             <ContactUS />
           </div>
           <div
             ref={sectionRef}
-            className="scroll-contact h-screen w-screen flex justify-center items-center c2"
+            className="scroll-contact c2 flex h-screen w-screen items-center justify-center"
           >
             <Contact />
           </div>

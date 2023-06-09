@@ -7,47 +7,47 @@ import {
 
 function Footer() {
   return (
-    <footer className="fixed bottom-16 w-full flex justify-start pl-8 z-50">
+    <footer className="fixed bottom-16 z-50 flex w-full justify-start pl-8">
       <div className="pt-2">
         <Link
           href="https://freelance.kodec.tech/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <p className="text-white opacity-[.35] font-Space-Mono">
+          <p className="font-Space-Mono text-white opacity-[.35]">
             freelance.kodec.tech
           </p>
         </Link>
       </div>
       <div
-        className={`footer grid grid-cols-4 divide-x-2 divide-opacity-50 divide-nav-blue border-solid border-2 border-nav-blue ml-36 border-opacity-50 font-Space-Mono z-50`}
+        className={`footer z-50 ml-36 grid grid-cols-4 divide-x-2 divide-nav-blue divide-opacity-50 border-2 border-solid border-nav-blue border-opacity-50 font-Space-Mono`}
         id="divider"
       >
         <div
-          className={`footer-text bg-scroll-blue text-black opacity-90 px-2 text-lg`}
+          className={`footer-text bg-scroll-blue px-2 text-lg text-black opacity-90`}
         >
           1
         </div>
-        <div className={`text-black opacity-90 px-2 text-lg text-transparent`}>
+        <div className={`px-2 text-lg text-black text-transparent opacity-90`}>
           .
         </div>
-        <div className={`text-black opacity-90 px-2 text-lg text-transparent `}>
+        <div className={`px-2 text-lg text-black text-transparent opacity-90 `}>
           .
         </div>
-        <div className={`text-black opacity-90 px-2 text-lg text-transparent`}>
+        <div className={`px-2 text-lg text-black text-transparent opacity-90`}>
           .
         </div>
       </div>
       <div>
         <FontAwesomeIcon
           icon={faComputerMouse}
-          className="mouse text-scroll-blue text-3xl ml-12"
+          className="mouse ml-12 text-3xl text-scroll-blue"
         />
       </div>
       <div className="relative">
-        <div className="dotted-line border-0 border-t-4 h-1 w-[50vw] border-dotted mt-2 ml-4 border-scroll-blue"></div>
-        <div className="absolute bottom-1 right-[21vw] flex items-center justify-center w-full h-full">
-          <div className="scroll-text text-black bg-scroll-blue rounded-md font-Space-Grotesk h-6 w-16 text-center z-50">
+        <div className="dotted-line ml-4 mt-2 h-1 w-[50vw] border-0 border-t-4 border-dotted border-scroll-blue"></div>
+        <div className="absolute bottom-1 right-[21vw] flex h-full w-full items-center justify-center">
+          <div className="scroll-text z-50 h-6 w-16 rounded-md bg-scroll-blue text-center font-Space-Grotesk text-black">
             Scroll.
           </div>
         </div>
@@ -56,7 +56,7 @@ function Footer() {
       <div>
         <FontAwesomeIcon
           icon={faChevronRight}
-          className="right-arrow text-scroll-blue mb-0.5"
+          className="right-arrow mb-0.5 text-scroll-blue"
         />
       </div>
     </footer>

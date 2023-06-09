@@ -15,26 +15,26 @@ const Contact: NextPage = () => {
   return (
     <>
       <section>
-        <div className="flex justify-center items-center h-screen">
-          <div className="flex flex-row gap-3 justify-center absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 md:max-w-[700px] z-50">
+        <div className="flex h-screen items-center justify-center">
+          <div className="absolute left-1/2 top-1/3 z-50 flex -translate-x-1/2 -translate-y-1/2 flex-row justify-center gap-3 md:max-w-[700px]">
             <FontAwesomeIcon
               icon={faPhone}
-              className="text-contact-red text-4xl pt-2"
+              className="pt-2 text-4xl text-contact-red"
             />
             <FontAwesomeIcon
               icon={faEnvelope}
-              className="text-contact-red text-5xl"
+              className="text-5xl text-contact-red"
             />
             <FontAwesomeIcon
               icon={faInstagram}
-              className="text-contact-red text-5xl"
+              className="text-5xl text-contact-red"
             />
           </div>
-          <div className="flex flex-col space-y-8 b-36 text-white font-Poppins text-center text-5xl">
+          <div className="b-36 flex flex-col space-y-8 text-center font-Poppins text-5xl text-white">
             <div className="space-y-4">
               <h1>
                 Do you want to start a{' '}
-                <span className="stroke-contact text-transparent text-5xl">
+                <span className="stroke-contact text-5xl text-transparent">
                   project
                 </span>{' '}
                 ,
@@ -47,9 +47,9 @@ const Contact: NextPage = () => {
             </h1>
           </div>
         </div>
-        <div className="absolute w-[65vw] h-[85vh] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[1000px] max-h-[600px] opacity-50">
-          <div className="rect-cnt-l w-[700px] h-[400px] border-solid border-contact-red border-2 rounded-md aboslute top-0 mt-10 left-0 z-0"></div>
-          <div className="rect-cnt-r w-[700px] h-[400px] border-solid border-contact-red border-2 rounded-md absolute -bottom-12 right-0 z-0 mb-6"></div>
+        <div className="absolute left-1/2 top-1/2 h-[85vh] max-h-[600px] w-[65vw] max-w-[1000px] -translate-x-1/2 -translate-y-1/2 opacity-50">
+          <div className="rect-cnt-l aboslute left-0 top-0 z-0 mt-10 h-[400px] w-[700px] rounded-md border-2 border-solid border-contact-red"></div>
+          <div className="rect-cnt-r absolute -bottom-12 right-0 z-0 mb-6 h-[400px] w-[700px] rounded-md border-2 border-solid border-contact-red"></div>
         </div>
       </section>
     </>

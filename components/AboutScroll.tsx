@@ -227,22 +227,22 @@ function AboutScroll() {
   return (
     <section className="overflow-hidden" id="about-scroll">
       <div ref={triggerRef}>
-        <div className="h-screen w-[350vw] flex relative bg-purp-rectangle-pattern wrap">
+        <div className="wrap relative flex h-screen w-[350vw] bg-purp-rectangle-pattern">
           <div
-            className="scroll h-screen w-screen flex justify-center items-center a1"
+            className="scroll a1 flex h-screen w-screen items-center justify-center"
             ref={sectionRef}
           >
             <AboutUS />
           </div>
           <div
             ref={sectionRef}
-            className="scroll h-screen w-screen flex justify-center items-center a2"
+            className="scroll a2 flex h-screen w-screen items-center justify-center"
           >
             <AboutUS_2 />
           </div>
           <div
             ref={sectionRef}
-            className="scroll  h-screen w-screen flex justify-center items-center a3"
+            className="scroll  a3 flex h-screen w-screen items-center justify-center"
           >
             <AboutUS_3 />
           </div>
