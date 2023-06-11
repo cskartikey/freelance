@@ -14,13 +14,13 @@ function Footer() {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <p className="font-Space-Mono text-white opacity-[.35]">
+          <p className="text-sm sm:text-base font-Space-Mono text-white opacity-[.35]">
             freelance.kodec.tech
           </p>
         </Link>
       </div>
       <div
-        className={`footer z-50 ml-36 grid grid-cols-4 divide-x-2 divide-nav-blue divide-opacity-50 border-2 border-solid border-nav-blue border-opacity-50 font-Space-Mono`}
+        className={`footer hidden z-50 ml-36 sm:grid grid-cols-4 divide-x-2 divide-nav-blue divide-opacity-50 border-2 border-solid border-nav-blue border-opacity-50 font-Space-Mono`}
         id="divider"
       >
         <div
@@ -41,10 +41,10 @@ function Footer() {
       <div>
         <FontAwesomeIcon
           icon={faComputerMouse}
-          className="mouse ml-12 text-3xl text-scroll-blue"
+          className="mouse ml-12 text-3xl text-scroll-blue hidden sm:block"
         />
       </div>
-      <div className="relative">
+      <div className="relative hidden sm:block">
         <div className="dotted-line ml-4 mt-2 h-1 w-[50vw] border-0 border-t-4 border-dotted border-scroll-blue"></div>
         <div className="absolute bottom-1 right-[21vw] flex h-full w-full items-center justify-center">
           <div className="scroll-text z-50 h-6 w-16 rounded-md bg-scroll-blue text-center font-Space-Grotesk text-black">
@@ -56,7 +56,7 @@ function Footer() {
       <div>
         <FontAwesomeIcon
           icon={faChevronRight}
-          className="right-arrow mb-0.5 text-scroll-blue"
+          className="right-arrow mb-0.5 text-scroll-blue hidden sm:block"
         />
       </div>
     </footer>

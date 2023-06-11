@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import * as Scroll from 'react-scroll'
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export default function Nav() {
   const [currScrollEle, setCurrScrollEle] = useState('/')
@@ -28,7 +30,7 @@ export default function Nav() {
 
   return (
     <nav
-      className={`fixed left-0 top-0 z-50 flex w-full justify-between px-12 pt-6`}
+      className={`fixed right-10 sm:left-0 top-0 z-50 flex w-full justify-between px-12 pt-6`}
     >
       <div>
         <Link href="/">
@@ -43,7 +45,10 @@ export default function Nav() {
           </p>
         </Link>
       </div>
-      <div className="z-50 space-x-8 pt-4">
+      <div>
+        <FontAwesomeIcon icon={faBars} className='text-3xl text-nav-blue right-8 fixed sm:hidden'/>
+      </div>
+      <div className="z-50 space-x-8 pt-4 hidden sm:block">
         <Scroll.Link
           to={'hero-section'}
           smooth={'easeOutQuad'}

@@ -35,22 +35,22 @@ export default function Hero() {
   })
   return (
     <main
-      className="hero flex h-screen items-center justify-center bg-blue-triange-pattern text-5xl"
+      className="hero flex h-screen items-center justify-center bg-blue-triange-pattern text-4xl sm:text-5xl"
       id="hero-section"
     >
       <Head>
         <title>Kode Crumbs: Freelance</title>
       </Head>
       <section>
-        <div className="mb-12 mr-96 pr-40">
-          <div className="absolute inset-0 z-10 flex items-center justify-center">
+        <div className="mb-96 pb-40 sm:pb-0 sm:mb-12 mr-96 sm:pr-40">
+          <div className="hidden absolute inset-0 z-10 sm:flex items-center justify-center">
             <Image
               src={image}
               alt="A landscape image of a person's hand writing on a notebook on a black wood table and a MacBook on it."
             />
           </div>
-          <div className="flex h-full flex-col space-y-4 border-l border-nav-blue pl-5 ">
-            <span className="z-20 font-Hurricane text-8xl text-white">
+          <div className="flex h-full flex-col space-y-3 sm:space-y-4 border-l border-nav-blue sm:pl-5 pl-56 ">
+            <span className="z-20 text-6xl font-Hurricane sm:text-8xl text-white">
               Designing
             </span>
             <span className="z-20 font-Poppins text-white">and</span>
@@ -61,10 +61,13 @@ export default function Hero() {
             <span className="z-20 font-Poppins text-white">
               websites for <span className="text-nav-blue">business</span>
             </span>
+            <div className='sm:hidden text-white text-2xl rounded-lg bg-button bg-opacity-70 font-semibold h-14 text-center pt-3 w-52'>
+                Contact Now
+            </div>
           </div>
         </div>
       </section>
-      <div className="absolute left-1/2 top-1/2 h-[85vh] max-h-[600px] w-[65vw] max-w-[1000px] -translate-x-1/2 -translate-y-1/2 transform">
+      <div className="hidden sm:block absolute left-1/2 top-1/2 h-[85vh] max-h-[600px] w-[65vw] max-w-[1000px] -translate-x-1/2 -translate-y-1/2 transform">
         <div className="shape-l absolute left-0 top-0 z-0 ml-10 mt-4 h-80 w-3/6 rounded-md border-2 border-solid border-nav-blue opacity-50"></div>
         <div className="shape-r absolute bottom-0 right-0 z-0 h-5/6 w-5/6 rounded-md border-2 border-solid border-nav-blue opacity-50"></div>
         <div className="shape-r-2 absolute -bottom-6 -right-8 z-0 h-3/6 w-3/6 rounded-md border-2 border-solid border-nav-blue opacity-50"></div>
