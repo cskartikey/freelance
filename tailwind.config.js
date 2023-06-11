@@ -28,7 +28,7 @@ module.exports = {
         'footer-number-red': '#F3BCC8',
         'footer-number-green': '#A0D8B3',
         'footer-number-ured': '#F99B7D',
-        'button': '#3282B8',
+        button: '#3282B8',
       },
       opacity: {
         33: '.33',

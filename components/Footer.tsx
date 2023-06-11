@@ -14,13 +14,13 @@ function Footer() {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <p className="text-sm sm:text-base font-Space-Mono text-white opacity-[.35]">
+          <p className="font-Space-Mono text-sm text-white opacity-[.35] sm:text-base">
             freelance.kodec.tech
           </p>
         </Link>
       </div>
       <div
-        className={`footer hidden z-50 ml-36 sm:grid grid-cols-4 divide-x-2 divide-nav-blue divide-opacity-50 border-2 border-solid border-nav-blue border-opacity-50 font-Space-Mono`}
+        className={`footer z-50 ml-36 hidden grid-cols-4 divide-x-2 divide-nav-blue divide-opacity-50 border-2 border-solid border-nav-blue border-opacity-50 font-Space-Mono sm:grid`}
         id="divider"
       >
         <div
@@ -41,7 +41,7 @@ function Footer() {
       <div>
         <FontAwesomeIcon
           icon={faComputerMouse}
-          className="mouse ml-12 text-3xl text-scroll-blue hidden sm:block"
+          className="mouse ml-12 hidden text-3xl text-scroll-blue sm:block"
         />
       </div>
       <div className="relative hidden sm:block">
@@ -56,7 +56,7 @@ function Footer() {
       <div>
         <FontAwesomeIcon
           icon={faChevronRight}
-          className="right-arrow mb-0.5 text-scroll-blue hidden sm:block"
+          className="right-arrow mb-0.5 hidden text-scroll-blue sm:block"
         />
       </div>
     </footer>

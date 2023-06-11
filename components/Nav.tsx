@@ -30,7 +30,7 @@ export default function Nav() {
 
   return (
     <nav
-      className={`fixed right-10 sm:left-0 top-0 z-50 flex w-full justify-between px-12 pt-6`}
+      className={`fixed right-10 top-0 z-50 flex w-full justify-between px-12 pt-6 sm:left-0`}
     >
       <div>
         <Link href="/">
@@ -46,9 +46,12 @@ export default function Nav() {
         </Link>
       </div>
       <div>
-        <FontAwesomeIcon icon={faBars} className='text-3xl text-nav-blue right-8 fixed sm:hidden'/>
+        <FontAwesomeIcon
+          icon={faBars}
+          className="fixed right-8 text-3xl text-nav-blue sm:hidden"
+        />
       </div>
-      <div className="z-50 space-x-8 pt-4 hidden sm:block">
+      <div className="z-50 hidden space-x-8 pt-4 sm:block">
         <Scroll.Link
           to={'hero-section'}
           smooth={'easeOutQuad'}
