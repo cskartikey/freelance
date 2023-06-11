@@ -13,6 +13,7 @@ function ContactScroll() {
   gsap.registerPlugin(ScrollTrigger, TextPlugin)
 
   useEffect(() => {
+
     let scrollArr = gsap.utils.toArray('.scroll-contact')
     gsap.set('.rect-cnt-l', {
       x: 100,
@@ -59,6 +60,8 @@ function ContactScroll() {
         invalidateOnRefresh: true,
         anticipatePin: 1,
         onEnter: function () {
+          window.history.replaceState(null, "","/contact");
+          document.title = "Freelance: Contact"
           const element = document.getElementsByClassName('nav-t')
           for (let i = 0; i < element.length; i++) {
             element[i].classList.replace('text-team-green', 'text-contact-red')
@@ -124,6 +127,8 @@ function ContactScroll() {
           )
         },
         onLeaveBack() {
+          window.history.replaceState(null, "","/team");
+          document.title = "Freelance: Team"
           const element = document.getElementsByClassName('nav-t')
           for (let i = 0; i < element.length; i++) {
             element[i].classList.replace('text-contact-red', 'text-team-green')

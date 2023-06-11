@@ -29,6 +29,8 @@ function TeamScroll() {
         invalidateOnRefresh: true,
         anticipatePin: 1,
         onEnter: function () {
+          window.history.replaceState(null, "","/team");
+          document.title = "Freelance: Team"
           const element = document.getElementsByClassName('nav-t')
           for (let i = 0; i < element.length; i++) {
             element[i].classList.replace(
@@ -82,6 +84,8 @@ function TeamScroll() {
           })
         },
         onLeaveBack() {
+          window.history.replaceState(null, "","/about");
+          document.title = "Freelance: About"
           const element = document.getElementsByClassName('nav-t')
           for (let i = 0; i < element.length; i++) {
             element[i].classList.replace(

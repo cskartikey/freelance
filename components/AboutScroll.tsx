@@ -10,7 +10,6 @@ import AboutUS_3 from '@/pages/about/3'
 function AboutScroll() {
   const sectionRef = useRef(null)
   const triggerRef = useRef(null)
-
   gsap.registerPlugin(ScrollTrigger, TextPlugin)
 
   useEffect(() => {
@@ -92,6 +91,8 @@ function AboutScroll() {
         invalidateOnRefresh: true,
         anticipatePin: 1,
         onEnter: function () {
+          window.history.replaceState(null, "","/about");
+          document.title = "Freelance: About"
           const navBarText = document.getElementsByClassName('nav-t')
           for (let i = 0; i < navBarText.length; i++) {
             navBarText[i].classList.replace(
@@ -148,6 +149,8 @@ function AboutScroll() {
           )
         },
         onLeaveBack() {
+          window.history.replaceState(null, "","/");
+          document.title = "Kode Crumbs: Freelance"
           const navBarText = document.getElementsByClassName('nav-t')
           for (let i = 0; i < navBarText.length; i++) {
             navBarText[i].classList.replace(
