@@ -1,7 +1,7 @@
 import { type NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import dummyAvatar from '../../assets/png/avatar.jpg'
+import uktarsh from '../../assets/png/kunwar.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelopesBulk } from '@fortawesome/free-solid-svg-icons'
@@ -29,7 +29,7 @@ const Utkarsh: NextPage = () => {
           </div>
           <div className="flex w-full max-w-[400px] flex-col items-center gap-2">
             <Image
-              src={dummyAvatar}
+              src={uktarsh}
               alt={'portrait of Kunwar Utkarsh, our second Graphics Designer'}
               className="pointer-events-none h-auto w-full max-w-[250px] rounded-md"
             />

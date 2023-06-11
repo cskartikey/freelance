@@ -6,7 +6,6 @@ import Nav from '@/components/Nav'
 import { useEffect } from 'react'
 
 export default function Index() {
-
   return (
     <>
       <Nav />

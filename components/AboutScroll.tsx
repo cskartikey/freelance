@@ -91,8 +91,8 @@ function AboutScroll() {
         invalidateOnRefresh: true,
         anticipatePin: 1,
         onEnter: function () {
-          window.history.replaceState(null, "","/about");
-          document.title = "Freelance: About"
+          window.history.replaceState(null, '', '/about')
+          document.title = 'Freelance: About'
           const navBarText = document.getElementsByClassName('nav-t')
           for (let i = 0; i < navBarText.length; i++) {
             navBarText[i].classList.replace(
@@ -149,8 +149,8 @@ function AboutScroll() {
           )
         },
         onLeaveBack() {
-          window.history.replaceState(null, "","/");
-          document.title = "Kode Crumbs: Freelance"
+          window.history.replaceState(null, '', '/')
+          document.title = 'Kode Crumbs: Freelance'
           const navBarText = document.getElementsByClassName('nav-t')
           for (let i = 0; i < navBarText.length; i++) {
             navBarText[i].classList.replace(

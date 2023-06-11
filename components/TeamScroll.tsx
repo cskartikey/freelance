@@ -29,8 +29,8 @@ function TeamScroll() {
         invalidateOnRefresh: true,
         anticipatePin: 1,
         onEnter: function () {
-          window.history.replaceState(null, "","/team");
-          document.title = "Freelance: Team"
+          window.history.replaceState(null, '', '/team')
+          document.title = 'Freelance: Team'
           const element = document.getElementsByClassName('nav-t')
           for (let i = 0; i < element.length; i++) {
             element[i].classList.replace(
@@ -68,7 +68,7 @@ function TeamScroll() {
             duration: 1,
             scrollTrigger: {
               start: 'top top',
-              trigger: '.t3',
+              trigger: '.ta-4',
               markers: false,
               scrub: 1,
               end: () => '+=' + window.innerWidth,
@@ -84,8 +84,8 @@ function TeamScroll() {
           })
         },
         onLeaveBack() {
-          window.history.replaceState(null, "","/about");
-          document.title = "Freelance: About"
+          window.history.replaceState(null, '', '/about')
+          document.title = 'Freelance: About'
           const element = document.getElementsByClassName('nav-t')
           for (let i = 0; i < element.length; i++) {
             element[i].classList.replace(
@@ -122,7 +122,48 @@ function TeamScroll() {
         end: () => '+=' + window.innerWidth,
       },
     })
-
+    gsap.to('.ta-2', {
+      scrollTrigger: {
+        start: 'top -20%',
+        trigger: '.ta-2',
+        onEnter: function () {
+          window.history.replaceState(null, '', '/team/kartikey')
+          document.title = 'Kartikey Chauhan'
+        },
+        onLeaveBack: function () {
+          window.history.replaceState(null, '', '/team')
+          document.title = 'Freelance: Team'
+        },
+      },
+    })
+    gsap.to('.ta-3', {
+      scrollTrigger: {
+        start: 'top -100%',
+        trigger: '.ta-3',
+        onEnter: function () {
+          window.history.replaceState(null, '', '/team/chitransh')
+          document.title = 'Chitransh Verma'
+        },
+        onLeaveBack: function () {
+          window.history.replaceState(null, '', '/team/kartikey')
+          document.title = 'Kartikey Chauhan'
+        },
+      },
+    })
+    gsap.to('.ta-4', {
+      scrollTrigger: {
+        start: 'top -160%',
+        trigger: '.ta-4',
+        onEnter: function () {
+          window.history.replaceState(null, '', '/team/utkarsh')
+          document.title = 'Kunwar Utkarsh'
+        },
+        onLeaveBack: function () {
+          window.history.replaceState(null, '', '/team/chitransh')
+          document.title = 'Chitransh Verma'
+        },
+      },
+    })
     return () => {
       to.kill()
     }
@@ -146,13 +187,13 @@ function TeamScroll() {
           </div>
           <div
             ref={sectionRef}
-            className="scroll-team  flex h-screen w-screen items-center justify-center "
+            className="scroll-team ta-3 flex h-screen w-screen items-center justify-center "
           >
             <Chitransh />
           </div>
           <div
             ref={sectionRef}
-            className="scroll-team  t3 flex h-screen w-screen items-center justify-center"
+            className="scroll-team ta-4 flex h-screen w-screen items-center justify-center"
           >
             <Utkarsh />
           </div>
