@@ -3,9 +3,9 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { Power2 } from 'gsap'
 import Team from '@/pages/team'
-import Kartikey from '@/pages/team/Kartikey'
-import Chitransh from '@/pages/team/Chitransh'
-import Utkarsh from '@/pages/team/Utkarsh'
+import Kartikey from '@/pages/team/kartikey'
+import Chitransh from '@/pages/team/chitransh'
+import Utkarsh from '@/pages/team/utkarsh'
 
 function TeamScroll() {
   const sectionRef = useRef(null)

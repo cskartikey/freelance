@@ -1,16 +1,17 @@
 import { type NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import chitranshAvatar from '../../assets/png/chitransh.jpg'
+import uktarsh from '../../assets/png/kunwar.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faInstagram,
-  faGithub,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelopesBulk } from '@fortawesome/free-solid-svg-icons'
-
-const Chitransh: NextPage = () => {
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
+const Utkarsh: NextPage = () => {
+  const router = useRouter()
+  useEffect(() => {
+    if (window.location.pathname.includes('/team')) router.push('/')
+  }, [])
   return (
     <>
       <section className="w-screen">
@@ -20,33 +21,32 @@ const Chitransh: NextPage = () => {
               Hi There!
             </div>
             <p className="font-Poppins text-lg text-white">
-              I'm{' '}
+              I am Kunwar{' '}
               <span className="stroke-team text-5xl text-transparent">
-                Chitransh
-              </span>{' '}
-              Verma, a passionate programmer who began this journey at 13. From
-              game development in Godot to specializing in web technologies like
-              Next.js, Electron.js, Chakra UI, React.js, and Node.js, I've
-              continuously honed my skills. With a drive for excellence, I
-              thrive on challenges and to strive for excellence in every project
-              I undertake.
+                Utkarsh
+              </span>
+              . I have around 4 years of experience in Graphics Designing. Being
+              fascinated by web development, the creative side of mine paid off
+              to make me a skilled Designer. I am proficient in GIMP, Figma,
+              Krita, Inkscape, Photoshop and AfterEffects. I’m the one
+              responsible for making your website’s designs truly magnificent.
             </p>
           </div>
           <div className="flex w-full max-w-[400px] flex-col items-center gap-2">
             <Image
-              src={chitranshAvatar}
-              alt={'portrait of Chitransh Verma, our second Web-Developer'}
+              src={uktarsh}
+              alt={'portrait of Kunwar Utkarsh, our second Graphics Designer'}
               className="pointer-events-none h-auto w-full max-w-[250px] rounded-md"
             />
             <h3 className="font-Space-Grotesk text-2xl font-bold text-white opacity-[0.5]">
-              Web-Developer
+              Graphics Designer
             </h3>
           </div>
         </div>
       </section>
       <div className="absolute bottom-[22vh] left-[5%] flex flex-col gap-4">
         <Link
-          href="https://www.linkedin.com/in/thearcane"
+          href="https://linkedin.com/in/k-utkarsh-21072b273"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -56,7 +56,7 @@ const Chitransh: NextPage = () => {
           />
         </Link>
         <Link
-          href="https://github.com/AnonymousXC"
+          href="https://github.com/mk-utkarsh"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -66,7 +66,7 @@ const Chitransh: NextPage = () => {
           />
         </Link>
         <Link
-          href="mailto:vermachitransh12@gmail.com"
+          href="mailto:kunwar15utkarsh@gmail.com"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -80,4 +80,4 @@ const Chitransh: NextPage = () => {
   )
 }
 
-export default Chitransh
+export default Utkarsh
