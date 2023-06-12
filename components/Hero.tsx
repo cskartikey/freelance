@@ -43,7 +43,7 @@ export default function Hero() {
       </Head>
       <section>
         <div className="mb-[35vh] mr-[35vw] sm:mb-12 sm:mr-96 sm:pb-0 sm:pr-40">
-          <div className="absolute bottom-[15vh] left-[7vw] z-10 w-[85vw] items-center justify-center sm:flex md:left-32 md:w-2/3 lg:inset-0 lg:w-full">
+          <div className="absolute bottom-[10vh] left-[7vw] z-10 w-[85vw] items-center justify-center sm:flex md:left-32 md:w-2/3 lg:inset-0 lg:w-full">
             <Image
               src={image}
               alt="A landscape image of a person's hand writing on a notebook on a black wood table and a MacBook on it."
