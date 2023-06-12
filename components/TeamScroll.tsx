@@ -170,7 +170,7 @@ function TeamScroll() {
   }, [])
 
   return (
-    <section className="overflow-hidden" id="team-scroll">
+    <section className="hidden overflow-hidden sm:block" id="team-scroll">
       <div ref={triggerRef}>
         <div className="relative flex h-screen w-[460vw] bg-green-triange-pattern">
           <div

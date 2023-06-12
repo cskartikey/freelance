@@ -155,7 +155,7 @@ function ContactScroll() {
   }, [])
 
   return (
-    <section className="overflow-hidden" id="contact-scroll">
+    <section className="hidden overflow-hidden sm:block" id="contact-scroll">
       <div ref={triggerRef}>
         <div className="relative flex h-screen w-[350vw] bg-red-rectangle-pattern">
           <div
