@@ -35,7 +35,7 @@ export default function Hero() {
   })
   return (
     <main
-      className="hero flex h-screen items-center justify-center bg-mobile-blue-triangle-pattern text-4xl md:bg-blue-triange-pattern lg:text-5xl"
+      className="hero flex h-screen items-center justify-center bg-mobile-blue-triangle-pattern overflow-x-hidden text-4xl md:bg-blue-triange-pattern lg:text-5xl"
       id="hero-section"
     >
       <Head>
@@ -43,10 +43,11 @@ export default function Hero() {
       </Head>
       <section>
         <div className=" mb-72 mr-32 sm:mb-12 sm:mr-96 sm:pb-0 sm:pr-40">
-          <div className="absolute z-10 hidden items-center justify-center sm:flex md:left-32 md:w-2/3 lg:inset-0 lg:w-full">
+          <div className="absolute z-10 w-80 bottom-32 left-5 items-center justify-center sm:flex md:left-32 md:w-2/3 lg:inset-0 lg:w-full">
             <Image
               src={image}
               alt="A landscape image of a person's hand writing on a notebook on a black wood table and a MacBook on it."
+              className='rounded-md sm:rounded-none'
             />
           </div>
           <div className="ml-24 flex h-full flex-col space-y-3 border-l border-nav-blue pl-5 sm:space-y-4 sm:pl-5 lg:ml-0">
