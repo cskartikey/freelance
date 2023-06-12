@@ -14,70 +14,6 @@ function AboutScroll() {
 
   useEffect(() => {
     let scrollArr = gsap.utils.toArray<HTMLElement>('.scroll')
-    gsap.set('.rect-abt-l', {
-      x: 60,
-      y: 80,
-      borderRight: 0,
-      borderTop: 2,
-      borderLeft: 2,
-      borderBottom: 0,
-    })
-    gsap.set('.rect-abt-r', {
-      x: 0,
-      y: 0,
-      borderRight: 0,
-      borderTop: 2,
-      borderLeft: 2,
-      borderBottom: 0,
-    })
-    gsap.set('.rect-abt2-l', {
-      x: 60,
-      y: 80,
-      borderRight: 0,
-      borderTop: 2,
-      borderLeft: 2,
-      borderBottom: 0,
-    })
-    gsap.set('.rect-abt2-r', {
-      x: 235,
-      y: 15,
-      borderRight: 0,
-      borderTop: 2,
-      borderLeft: 2,
-      borderBottom: 0,
-    })
-    gsap.set('.rect-abt2-r2', {
-      x: -62,
-      y: 160,
-      borderRight: 0,
-      borderTop: 2,
-      borderLeft: 2,
-      borderBottom: 0,
-    })
-    gsap.set('.rect-abt3-l', {
-      x: 60,
-      y: 80,
-      borderRight: 0,
-      borderTop: 2,
-      borderLeft: 2,
-      borderBottom: 0,
-    })
-    gsap.set('.rect-abt3-r', {
-      x: 235,
-      y: 15,
-      borderRight: 0,
-      borderTop: 2,
-      borderLeft: 2,
-      borderBottom: 0,
-    })
-    gsap.set('.rect-abt3-r2', {
-      x: -62,
-      y: 160,
-      borderRight: 0,
-      borderTop: 2,
-      borderLeft: 2,
-      borderBottom: 0,
-    })
     let to = gsap.to(scrollArr, {
       xPercent: () => -100 * (scrollArr.length - 1),
       ease: 'none',
@@ -137,14 +73,14 @@ function AboutScroll() {
             defaults: { duration: 2, ease: Power2.easeInOut, opacity: 1 },
           })
           abt1.to('.rect-abt-l', {
-            x: -40,
-            y: -20,
+            x: -180,
+            y: -160,
             borderBottom: 2,
             borderRight: 2,
           })
           abt1.to(
             '.rect-abt-r',
-            { x: 40, y: 20, borderBottom: 2, borderRight: 2 },
+            { x: 180, y: 50, borderBottom: 2, borderRight: 2 },
             '<'
           )
         },
@@ -192,15 +128,15 @@ function AboutScroll() {
         invalidateOnRefresh: true,
       },
     })
-    abt2.to('.rect-abt2-l', { x: -40, y: -20, borderBottom: 2, borderRight: 2 })
+    abt2.to('.rect-abt2-l', { x: -100, y: -110, borderBottom: 2, borderRight: 2 })
     abt2.to(
       '.rect-abt2-r',
-      { x: 40, y: 20, borderBottom: 2, borderRight: 2 },
+      { x: -160, y: 10, borderBottom: 2, borderRight: 2 },
       '<'
     )
     abt2.to(
       '.rect-abt2-r2',
-      { x: 80, y: 20, borderBottom: 2, borderRight: 2 },
+      { x: 160, y: -120, borderBottom: 2, borderRight: 2 },
       '<'
     )
     let abt3 = gsap.timeline({
@@ -211,15 +147,15 @@ function AboutScroll() {
         invalidateOnRefresh: true,
       },
     })
-    abt3.to('.rect-abt3-l', { x: 600, y: 350, borderBottom: 2, borderRight: 2 })
+    abt3.to('.rect-abt3-l', { x: 550, y: 250, borderBottom: 2, borderRight: 2 })
     abt3.to(
       '.rect-abt3-r',
-      { x: 40, y: 20, borderBottom: 2, borderRight: 2 },
+      { x: -160, y: 10, borderBottom: 2, borderRight: 2 },
       '<'
     )
     abt3.to(
       '.rect-abt3-r2',
-      { x: 80, y: 20, borderBottom: 2, borderRight: 2 },
+      { x: 160, y: -120, borderBottom: 2, borderRight: 2 },
       '<'
     )
     return () => {
