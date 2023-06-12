@@ -14,38 +14,7 @@ function ContactScroll() {
 
   useEffect(() => {
     let scrollArr = gsap.utils.toArray('.scroll-contact')
-    gsap.set('.rect-cnt-l', {
-      x: 100,
-      y: 100,
-      borderRight: 0,
-      borderTop: 2,
-      borderLeft: 2,
-      borderBottom: 0,
-    })
-    gsap.set('.rect-cnt-r', {
-      x: -200,
-      y: -85,
-      borderRight: 0,
-      borderTop: 2,
-      borderLeft: 2,
-      borderBottom: 0,
-    })
-    gsap.set('.rect-cnt2-l', {
-      x: 100,
-      y: 100,
-      borderRight: 0,
-      borderTop: 2,
-      borderLeft: 2,
-      borderBottom: 0,
-    })
-    gsap.set('.rect-cnt2-r', {
-      x: -200,
-      y: -85,
-      borderRight: 0,
-      borderTop: 2,
-      borderLeft: 2,
-      borderBottom: 0,
-    })
+
     let to = gsap.to(scrollArr, {
       xPercent: () => -100 * (scrollArr.length - 1),
       ease: 'none',
@@ -114,14 +83,14 @@ function ContactScroll() {
             defaults: { duration: 2, ease: Power2.easeInOut, opacity: 1 },
           })
           cnt1.to('.rect-cnt-l', {
-            x: -40,
-            y: -20,
+            x: -180,
+            y: -160,
             borderBottom: 2,
             borderRight: 2,
           })
           cnt1.to(
             '.rect-cnt-r',
-            { x: 40, y: 20, borderBottom: 2, borderRight: 2 },
+            { x: 180, y: 50, borderBottom: 2, borderRight: 2 },
             '<'
           )
         },
@@ -162,17 +131,22 @@ function ContactScroll() {
       },
     })
     let cnt2 = gsap.timeline({
-      defaults: { duration: 2, ease: 'none', opacity: 1 },
+      defaults: { duration: 2, ease: Power2.easeInOut, opacity: 1 },
       scrollTrigger: {
         start: 'top -20%',
         trigger: '.c2',
         invalidateOnRefresh: true,
       },
     })
-    cnt2.to('.rect-cnt2-l', { x: 400, y: -20, borderBottom: 2, borderRight: 2 })
+    cnt2.to('.rect-cnt2-l', {
+      x: 180,
+      y: -200,
+      borderBottom: 2,
+      borderRight: 2,
+    })
     cnt2.to(
       '.rect-cnt2-r',
-      { x: -400, y: 20, borderBottom: 2, borderRight: 2 },
+      { x: -300, y: 10, borderBottom: 2, borderRight: 2 },
       '<'
     )
     return () => {

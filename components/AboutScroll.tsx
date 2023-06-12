@@ -128,7 +128,12 @@ function AboutScroll() {
         invalidateOnRefresh: true,
       },
     })
-    abt2.to('.rect-abt2-l', { x: -100, y: -110, borderBottom: 2, borderRight: 2 })
+    abt2.to('.rect-abt2-l', {
+      x: -100,
+      y: -110,
+      borderBottom: 2,
+      borderRight: 2,
+    })
     abt2.to(
       '.rect-abt2-r',
       { x: -160, y: 10, borderBottom: 2, borderRight: 2 },

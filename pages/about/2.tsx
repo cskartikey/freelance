@@ -46,7 +46,7 @@ const AboutUS_2: NextPage = () => {
       </section>
       <div className="absolute left-1/2 top-1/2 h-[85vh] max-h-[600px] w-[65vw] max-w-[1000px] -translate-x-1/2 -translate-y-1/2 opacity-50">
         <div className="rect-abt2-l aboslute z-0 ml-64 mt-44 h-36 w-56 rounded-md border-l-2 border-t-2 border-solid border-rectangle-purp"></div>
-        <div className="rect-abt2-r absolute left-0 top-36 ml-60 mt-7 z-0 h-[400px] w-[700px] rounded-md border-l-2 border-t-2 border-solid border-rectangle-purp"></div>
+        <div className="rect-abt2-r absolute left-0 top-36 z-0 ml-60 mt-7 h-[400px] w-[700px] rounded-md border-l-2 border-t-2 border-solid border-rectangle-purp"></div>
         <div className="rect-abt2-r2 absolute right-0 top-0 z-0 mr-12 mt-40 h-[400px] w-[700px] rounded-md border-l-2 border-t-2 border-solid border-rectangle-purp"></div>
         {/* Responsive to be made */}
       </div>

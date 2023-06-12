@@ -48,8 +48,8 @@ const Contact: NextPage = () => {
           </div>
         </div>
         <div className="absolute left-1/2 top-1/2 h-[85vh] max-h-[600px] w-[65vw] max-w-[1000px] -translate-x-1/2 -translate-y-1/2 opacity-50">
-          <div className="rect-cnt-l aboslute left-0 top-0 z-0 mt-10 h-[400px] w-[700px] rounded-md border-2 border-solid border-contact-red"></div>
-          <div className="rect-cnt-r absolute -bottom-12 right-0 z-0 mb-6 h-[400px] w-[700px] rounded-md border-2 border-solid border-contact-red"></div>
+          <div className="rect-cnt-l aboslute left-0 top-0 z-0 ml-36 mt-48 h-[400px] w-[700px] rounded-md border-l-2 border-t-2 border-solid border-contact-red"></div>
+          <div className="rect-cnt-r absolute -bottom-12 right-0 z-0 mb-12 mr-32 h-[400px] w-[700px] rounded-md border-l-2 border-t-2 border-solid border-contact-red"></div>
         </div>
       </section>
     </>
