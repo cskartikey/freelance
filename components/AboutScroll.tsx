@@ -169,9 +169,9 @@ function AboutScroll() {
   }, [])
 
   return (
-    <section className="hidden overflow-hidden sm:block" id="about-scroll">
+    <section className="overflow-hidden" id="about-scroll">
       <div ref={triggerRef}>
-        <div className="wrap relative flex h-screen w-[350vw] bg-purp-rectangle-pattern">
+        <div className="wrap relative flex h-screen w-[350vw] bg-mobile-purple-rectangle-pattern sm:bg-purp-rectangle-pattern">
           <div
             className="scroll a1 flex h-screen w-screen items-center justify-center"
             ref={sectionRef}

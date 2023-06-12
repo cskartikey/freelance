@@ -14,8 +14,8 @@ const AboutUS: NextPage = () => {
   return (
     <>
       <section>
-        <div className="absolute left-1/2 top-1/2 z-50 flex -translate-x-1/2 -translate-y-1/2 flex-col gap-10 md:max-w-[700px]">
-          <div className="z-50 flex flex-row justify-center gap-3">
+        <div className="absolute left-1/2 top-1/2 z-50 flex -translate-x-1/2 -translate-y-1/2 flex-col gap-5 sm:gap-10 md:max-w-[700px]">
+          <div className="z-50 flex flex-row sm:justify-center gap-3 mt-28">
             <Link
               href="https://react.dev/"
               rel="noopener noreferrer"
@@ -47,9 +47,9 @@ const AboutUS: NextPage = () => {
               />
             </Link>
           </div>
-          <h1 className="text-center font-Poppins text-3xl text-white md:text-4xl">
+          <h1 className="text-start sm:text-center font-Poppins text-3xl text-white md:text-4xl mr-16 max-w-xl">
             We{' '}
-            <span className="craft-anim text-5xl text-transparent underline underline-offset-2">
+            <span className="craft-anim text-4xl lg:text-5xl text-transparent underline underline-offset-2">
               Craft
             </span>{' '}
             Your Website with Unmatched Dedication, Leveraging the Latest
@@ -65,7 +65,7 @@ const AboutUS: NextPage = () => {
           </h3>
         </div>
       </section>
-      <div className="absolute left-1/2 top-1/2 h-[85vh] max-h-[600px] w-[65vw] max-w-[1000px] -translate-x-1/2 -translate-y-1/2 opacity-50">
+      <div className="absolute left-1/2 top-1/2 h-[85vh] max-h-[600px] w-[65vw] max-w-[1000px] -translate-x-1/2 -translate-y-1/2 opacity-50 hidden sm:block">
         <div className="rect-abt-l aboslute left-0 top-0 z-0 ml-36 mt-48 h-[300px] w-[520px] rounded-md border-l-2 border-t-2 border-solid border-rectangle-purp"></div>
         <div className="rect-abt-r absolute -bottom-12 right-0 z-0 mb-12 mr-32 h-[400px] w-[700px] rounded-md border-l-2 border-t-2 border-solid border-rectangle-purp"></div>
         {/* Responsive to be made */}
@@ -75,3 +75,4 @@ const AboutUS: NextPage = () => {
 }
 
 export default AboutUS
+  
