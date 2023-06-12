@@ -48,7 +48,7 @@ export default function Nav() {
       <div>
         <FontAwesomeIcon
           icon={faBars}
-          className="fixed right-8 text-3xl text-nav-blue sm:hidden"
+          className="fixed left-80 text-3xl text-nav-blue sm:hidden"
         />
       </div>
       <div className="z-50 hidden space-x-8 pt-4 sm:block">

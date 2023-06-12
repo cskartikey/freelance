@@ -11,6 +11,7 @@ module.exports = {
         'purp-rectangle-pattern': "url('/png/purple-rectangle.png')",
         'green-triange-pattern': "url('/png/green-triangle.png')",
         'red-rectangle-pattern': "url('/png/red-rectangle.png')",
+        'mobile-blue-triangle-pattern': "url('/png/mobile-blue-triangle.png')",
       },
       fontFamily: {
         Mansalva: ['Mansalva', 'cursive'],

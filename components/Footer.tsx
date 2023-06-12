@@ -20,7 +20,7 @@ function Footer() {
         </Link>
       </div>
       <div
-        className={`footer z-50 ml-36 hidden grid-cols-4 divide-x-2 divide-nav-blue divide-opacity-50 border-2 border-solid border-nav-blue border-opacity-50 font-Space-Mono sm:grid`}
+        className={`footer z-50 ml-36 hidden grid-cols-4 divide-x-2 divide-nav-blue divide-opacity-50 border-2 border-solid border-nav-blue border-opacity-50 font-Space-Mono lg:grid`}
         id="divider"
       >
         <div

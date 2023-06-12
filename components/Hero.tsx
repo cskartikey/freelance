@@ -35,22 +35,22 @@ export default function Hero() {
   })
   return (
     <main
-      className="hero flex h-screen items-center justify-center bg-blue-triange-pattern text-4xl sm:text-5xl"
+      className="hero flex h-screen items-center justify-center bg-mobile-blue-triangle-pattern text-4xl md:bg-blue-triange-pattern lg:text-5xl"
       id="hero-section"
     >
       <Head>
         <title>Kode Crumbs: Freelance</title>
       </Head>
       <section>
-        <div className="mb-96 mr-96 pb-40 sm:mb-12 sm:pb-0 sm:pr-40">
-          <div className="absolute inset-0 z-10 hidden items-center justify-center sm:flex">
+        <div className=" mb-72 mr-32 sm:mb-12 sm:mr-96 sm:pb-0 sm:pr-40">
+          <div className="absolute z-10 hidden items-center justify-center sm:flex md:left-32 md:w-2/3 lg:inset-0 lg:w-full">
             <Image
               src={image}
               alt="A landscape image of a person's hand writing on a notebook on a black wood table and a MacBook on it."
             />
           </div>
-          <div className="flex h-full flex-col space-y-3 border-l border-nav-blue pl-56 sm:space-y-4 sm:pl-5 ">
-            <span className="z-20 font-Hurricane text-6xl text-white sm:text-8xl">
+          <div className="ml-24 flex h-full flex-col space-y-3 border-l border-nav-blue pl-5 sm:space-y-4 sm:pl-5 lg:ml-0">
+            <span className="z-20 font-Hurricane text-6xl text-white md:text-7xl lg:text-8xl">
               Designing
             </span>
             <span className="z-20 font-Poppins text-white">and</span>
@@ -68,9 +68,9 @@ export default function Hero() {
         </div>
       </section>
       <div className="absolute left-1/2 top-1/2 hidden h-[85vh] max-h-[600px] w-[65vw] max-w-[1000px] -translate-x-1/2 -translate-y-1/2 transform sm:block">
-        <div className="shape-l absolute left-0 top-0 z-0 ml-10 mt-4 h-80 w-3/6 rounded-md border-2 border-solid border-nav-blue opacity-50"></div>
-        <div className="shape-r absolute bottom-0 right-0 z-0 h-5/6 w-5/6 rounded-md border-2 border-solid border-nav-blue opacity-50"></div>
-        <div className="shape-r-2 absolute -bottom-6 -right-8 z-0 h-3/6 w-3/6 rounded-md border-2 border-solid border-nav-blue opacity-50"></div>
+        <div className="shape-l absolute left-0 top-0 z-0 ml-10 mt-4 rounded-md border-2 border-solid border-nav-blue opacity-50 md:h-96 md:w-7/12 lg:h-80 lg:w-3/6"></div>
+        <div className="shape-r absolute bottom-0 z-0 rounded-md border-2 border-solid border-nav-blue opacity-50 md:-right-24 md:h-5/6 md:w-full lg:right-0 lg:h-4/6 lg:w-5/6"></div>
+        <div className="shape-r-2 absolute -bottom-6 z-0 rounded-md border-2 border-solid border-nav-blue opacity-50 md:-right-28 md:h-4/6 md:w-4/6 lg:-right-8 lg:h-3/6 lg:w-3/6"></div>
       </div>
     </main>
   )
