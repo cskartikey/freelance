@@ -42,7 +42,7 @@ export default function Hero() {
         <title>Kode Crumbs: Freelance</title>
       </Head>
       <section>
-        <div className=" mb-72 mr-32 sm:mb-12 sm:mr-96 sm:pb-0 sm:pr-40">
+        <div className=" mb-[35vh] mr-[35vw] sm:mb-12 sm:mr-96 sm:pb-0 sm:pr-40">
           <div className="absolute z-10 w-80 bottom-[15vh] left-[6vw] items-center justify-center sm:flex md:left-32 md:w-2/3 lg:inset-0 lg:w-full">
             <Image
               src={image}
