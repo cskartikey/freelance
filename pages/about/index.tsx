@@ -49,7 +49,7 @@ const AboutUS: NextPage = () => {
           </div>
           <h1 className="text-start sm:text-center font-Poppins text-3xl text-white md:text-4xl sm:mr-16 ml-4 max-w-xl">
             We{' '}
-            <span className="craft-anim text-4xl lg:text-5xl text-transparent">
+            <span className="sm:craft-anim craft-anim-mobile text-4xl lg:text-5xl text-transparent">
               Craft
             </span>{' '}
             Your Website with Unmatched Dedication, Leveraging the Latest

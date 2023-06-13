@@ -11,22 +11,22 @@ const AboutUS_3: NextPage = () => {
     <>
       <section>
         <div className="relative left-1/2 top-1/2 z-50 flex -translate-x-1/2  flex-col gap-5 sm:gap-10 md:max-w-[700px]">
-          <div className="z-50 flex flex-row sm:justify-center gap-3 mt-28">
+          <div className="z-50 flex flex-row sm:justify-center gap-3 mt-28 sm:ml-0 ml-4">
             <FontAwesomeIcon
               icon={faHandshake}
-              className="text-5xl text-rectangle-purp"
+              className="text-4xl sm:text-5xl text-rectangle-purp"
             />
             <FontAwesomeIcon
               icon={faEye}
-              className="text-5xl text-rectangle-purp"
+              className="text-4xl sm:text-5xl text-rectangle-purp"
             />
             <FontAwesomeIcon
               icon={faLightbulb}
-              className="text-5xl text-rectangle-purp"
+              className="text-4xl sm:text-5xl text-rectangle-purp"
             />
           </div>
-          <h1 className="text-start sm:text-center font-Poppins text-3xl text-white md:text-4xl mr-16 max-w-xl">
-            <span className="craft-anim text-4xl lg:text-5xl text-transparent">
+          <h1 className="text-start sm:text-center font-Poppins text-3xl text-white md:text-4xl sm:mr-16 ml-4 max-w-xl">
+            <span className="sm:craft-anim craft-anim-mobile text-4xl lg:text-5xl text-transparent">
               Collaborative{' '}
             </span>{' '}
             Approach: Your Vision, Our Expertise

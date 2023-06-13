@@ -9,7 +9,9 @@
 .craft-anim {
   -webkit-text-stroke: 2px #9376e0;
 }
-
+.craft-anim-mobile {
+  -webkit-text-stroke: 1px #9376e0;
+}
 .stroke-team {
   -webkit-text-stroke: 2px #a0d8b3;
 }
