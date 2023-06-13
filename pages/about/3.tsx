@@ -25,13 +25,13 @@ const AboutUS_3: NextPage = () => {
               className="text-4xl sm:text-5xl text-rectangle-purp"
             />
           </div>
-          <h1 className="text-start sm:text-center font-Poppins text-3xl text-white md:text-4xl sm:mr-16 ml-4 max-w-xl">
+          <h1 className="text-start sm:text-center font-Poppins text-3xl text-white md:text-4xl sm:mr-16 ml-4 max-w-screen-sm">
             <span className="sm:craft-anim craft-anim-mobile text-4xl lg:text-5xl text-transparent">
               Collaborative{' '}
             </span>{' '}
             Approach: Your Vision, Our Expertise
           </h1>
-          <h3 className="text-center font-Space-Grotesk text-xl text-white md:text-2xl">
+          <h3 className="text-center font-Space-Grotesk text-xl text-white md:text-2xl max-w-screen-sm px-4">
             We emphasize our collaborative approach to website development. We
             understand the significance of{' '}
             <span className="underline underline-offset-2">

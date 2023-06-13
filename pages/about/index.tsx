@@ -47,7 +47,7 @@ const AboutUS: NextPage = () => {
               />
             </Link>
           </div>
-          <h1 className="text-start sm:text-center font-Poppins text-3xl text-white md:text-4xl sm:mr-16 ml-4 max-w-xl">
+          <h1 className="text-start sm:text-center font-Poppins text-3xl text-white md:text-4xl sm:mr-16 ml-4 max-w-screen-sm">
             We{' '}
             <span className="sm:craft-anim craft-anim-mobile text-4xl lg:text-5xl text-transparent">
               Craft
@@ -55,7 +55,7 @@ const AboutUS: NextPage = () => {
             Your Website with Unmatched Dedication, Leveraging the Latest
             Technologies
           </h1>
-          <h3 className="text-center font-Space-Grotesk text-xl text-white md:text-2xl">
+          <h3 className="text-center font-Space-Grotesk text-xl text-white md:text-2xl max-w-screen-sm px-4">
             We harness the power of cutting-edge technologies like React,
             NextJS, GSAP and Node to build an efficent, scalabe and{' '}
             <span className='underline underline-offset-2'>a high performing website</span>. Our

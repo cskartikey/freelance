@@ -24,14 +24,14 @@ const AboutUS_2: NextPage = () => {
               className="text-4xl sm:text-5xl text-rectangle-purp"
             />
           </div>
-          <h1 className="text-start sm:text-center font-Poppins text-3xl text-white md:text-4xl sm:mr-16 ml-4 max-w-xl">
+          <h1 className="text-start sm:text-center font-Poppins text-3xl text-white md:text-4xl sm:mr-16 ml-4 max-w-screen-sm">
             We Deliver Fast,{' '}
             <span className="sm:craft-anim craft-anim-mobile text-4xl lg:text-5xl text-transparent">
               Affordable
             </span>
             , and On-Time Solutions
           </h1>
-          <h3 className="text-center font-Space-Grotesk text-xl text-white md:text-2xl">
+          <h3 className="text-center font-Space-Grotesk text-xl text-white md:text-2xl max-w-screen-sm px-4">
             We value your time and money. With our streamlined project
             management using Trello and Github, we work swiftly to deliver
             exceptional results and ensure seamless collaboration. Our pricing
