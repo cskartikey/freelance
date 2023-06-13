@@ -14,6 +14,9 @@ module.exports = {
         'mobile-blue-triangle-pattern': "url('/png/mobile-blue-triangle.png')",
         'mobile-purple-rectangle-pattern': "url('/png/mobile-purple-rectangle.png')",
       },
+      screens:{
+        'sm-max': {'max': '639px'},
+      },
       fontFamily: {
         Mansalva: ['Mansalva', 'cursive'],
         'Space-Grotesk': ['Space Grotesk', 'sans-serif'],

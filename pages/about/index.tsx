@@ -14,8 +14,8 @@ const AboutUS: NextPage = () => {
   return (
     <>
       <section>
-        <div className="absolute left-1/2 top-1/2 z-50 flex -translate-x-1/2 -translate-y-1/2 flex-col gap-5 sm:gap-10 md:max-w-[700px]">
-          <div className="z-50 flex flex-row sm:justify-center gap-3 mt-28">
+        <div className="relative left-1/2 top-1/2 z-50 flex -translate-x-1/2  flex-col gap-5 sm:gap-10 md:max-w-[700px]">
+          <div className="z-50 flex flex-row sm:justify-center gap-3 mt-28 sm:ml-0 ml-4">
             <Link
               href="https://react.dev/"
               rel="noopener noreferrer"
@@ -47,7 +47,7 @@ const AboutUS: NextPage = () => {
               />
             </Link>
           </div>
-          <h1 className="text-start sm:text-center font-Poppins text-3xl text-white md:text-4xl mr-16 max-w-xl">
+          <h1 className="text-start sm:text-center font-Poppins text-3xl text-white md:text-4xl sm:mr-16 ml-4 max-w-xl">
             We{' '}
             <span className="craft-anim text-4xl lg:text-5xl text-transparent underline underline-offset-2">
               Craft
@@ -58,7 +58,7 @@ const AboutUS: NextPage = () => {
           <h3 className="text-center font-Space-Grotesk text-xl text-white md:text-2xl">
             We harness the power of cutting-edge technologies like React,
             NextJS, GSAP and Node to build an efficent, scalabe and{' '}
-            <span className="underline">a high performing website</span>. Our
+            <span>a high performing website</span>. Our
             meticulous attention to detail extends to the design phase, where we
             craft visually stunning interfaces from scratch using
             industry-leading tools like Figma.

@@ -9,8 +9,8 @@ const AboutUS_2: NextPage = () => {
   return (
     <>
       <section>
-        <div className="absolute left-1/2 top-1/2 z-50 flex -translate-x-1/2 -translate-y-1/2 flex-col gap-10 md:max-w-[700px]">
-          <div className="flex flex-row justify-center gap-3 space-x-2">
+        <div className="relative left-1/2 top-1/2 z-50 flex -translate-x-1/2  flex-col gap-5 sm:gap-10 md:max-w-[700px]">
+          <div className="z-50 flex flex-row sm:justify-center gap-3 mt-28">
             <FontAwesomeIcon
               icon={faFire}
               className="text-5xl text-rectangle-purp"
@@ -24,9 +24,9 @@ const AboutUS_2: NextPage = () => {
               className="text-5xl text-rectangle-purp"
             />
           </div>
-          <h1 className="text-center font-Poppins text-3xl text-white md:text-4xl">
+          <h1 className="text-start sm:text-center font-Poppins text-3xl text-white md:text-4xl mr-16 max-w-xl">
             We Deliver Fast,{' '}
-            <span className="craft-anim text-5xl text-transparent">
+            <span className="craft-anim text-4xl lg:text-5xl text-transparent underline underline-offset-2">
               Affordable
             </span>
             , and On-Time Solutions
