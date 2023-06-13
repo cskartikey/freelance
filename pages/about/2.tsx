@@ -26,7 +26,7 @@ const AboutUS_2: NextPage = () => {
           </div>
           <h1 className="text-start sm:text-center font-Poppins text-3xl text-white md:text-4xl mr-16 max-w-xl">
             We Deliver Fast,{' '}
-            <span className="craft-anim text-4xl lg:text-5xl text-transparent underline underline-offset-2">
+            <span className="craft-anim text-4xl lg:text-5xl text-transparent">
               Affordable
             </span>
             , and On-Time Solutions

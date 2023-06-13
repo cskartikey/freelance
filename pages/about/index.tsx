@@ -49,7 +49,7 @@ const AboutUS: NextPage = () => {
           </div>
           <h1 className="text-start sm:text-center font-Poppins text-3xl text-white md:text-4xl sm:mr-16 ml-4 max-w-xl">
             We{' '}
-            <span className="craft-anim text-4xl lg:text-5xl text-transparent underline underline-offset-2">
+            <span className="craft-anim text-4xl lg:text-5xl text-transparent">
               Craft
             </span>{' '}
             Your Website with Unmatched Dedication, Leveraging the Latest
@@ -58,7 +58,7 @@ const AboutUS: NextPage = () => {
           <h3 className="text-center font-Space-Grotesk text-xl text-white md:text-2xl">
             We harness the power of cutting-edge technologies like React,
             NextJS, GSAP and Node to build an efficent, scalabe and{' '}
-            <span>a high performing website</span>. Our
+            <span className='underline underline-offset-2'>a high performing website</span>. Our
             meticulous attention to detail extends to the design phase, where we
             craft visually stunning interfaces from scratch using
             industry-leading tools like Figma.
